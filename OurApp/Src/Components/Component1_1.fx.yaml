@@ -1,0 +1,66 @@
+Component1_1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Increments: =100
+    Max: =100
+    Min: =100
+    NumberOutput: =100
+    StartNumber: =100
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    TextInput3_1 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =0.5
+        Default: =If(IsBlank(Component1_1.NumberOutput),Value(Component1_1.StartNumber),Component1_1.NumberOutput)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =76
+        Size: =21
+        Width: =104
+        X: =251
+        Y: =263
+        ZIndex: =1
+
+    Button11_2 As button:
+        BorderColor: =Gray
+        BorderThickness: =1
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =56
+        OnSelect: |-
+            =If((Component1_1.NumberOutput + Value(Component1_1.Increments)) > Value(Component1_1.Max),
+                Set(varNumber, Value(TextInput3_1.Text)),
+            
+                Set(varNumber, Value(TextInput3_1.Text) + Value(Component1_1.Increments))
+                )
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="+"
+        Width: =95
+        X: =379
+        Y: =273
+        ZIndex: =3
+
+    Button11_3 As button:
+        BorderColor: =Gray
+        BorderThickness: =1
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =56
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="-"
+        Width: =95
+        X: =132
+        Y: =273
+        ZIndex: =4
+

@@ -1,0 +1,106 @@
+Receipts As screen:
+
+    Label1_12 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =108
+        Size: =35
+        Text: =""
+        Width: =640
+        ZIndex: =1
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =1028
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =108
+        ZIndex: =2
+
+        Image2 As image:
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image2.Width - 104
+            X: =Image2.X + Image2.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =Title2.X
+            Y: =Title2.Y + Title2.Height + 4
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    LblAppName3_1 As label:
+        Align: =Align.Center
+        Height: =70
+        Size: =27
+        Text: ="Receipts"
+        Width: =281
+        Wrap: =false
+        X: =179
+        Y: =19
+        ZIndex: =3
+
+    Icon1 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Employee Menu')
+        X: =24
+        Y: =24
+        ZIndex: =4
+
+    logo_1 As image:
+        Height: =125
+        Image: ='My project-1 (14)'
+        Width: =156
+        X: =484
+        ZIndex: =5
+

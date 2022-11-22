@@ -1,0 +1,77 @@
+"'Employee Menu' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(0, 0, 0, 0)
+
+    toReceipts As button:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =86
+        OnSelect: =Navigate(Receipts)
+        Size: =24
+        Text: ="Receipts"
+        Width: =361
+        X: =138
+        Y: =588
+        ZIndex: =1
+
+    seeInventory As button:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =93
+        OnSelect: =Navigate(Inventory)
+        Size: =24
+        Text: ="Current Inventory"
+        Width: =361
+        X: =138
+        Y: =877
+        ZIndex: =2
+
+    Label1_10 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =108
+        Size: =35
+        Text: =""
+        Width: =640
+        ZIndex: =3
+
+    addItem As button:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =93
+        OnSelect: =Navigate(Add_Item_To_Inventory)
+        Size: =24
+        Text: ="Add Inventory"
+        Width: =361
+        X: =138
+        Y: =730
+        ZIndex: =5
+
+    Icon6_1 As icon.Leave:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =56
+        Icon: =Icon.Leave
+        OnSelect: =Navigate(FirstScreen)
+        Width: =80
+        X: =543
+        Y: =26
+        ZIndex: =6
+
+    toSales As button:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =86
+        OnSelect: =Navigate('Sales History')
+        Size: =24
+        Text: |-
+            ="Sales
+            "
+        Width: =361
+        X: =138
+        Y: =451
+        ZIndex: =7
+
+    Image1_5 As image:
+        Height: =125
+        Image: ='My project-1 (14)'
+        Width: =156
+        X: =241
+        ZIndex: =8
+

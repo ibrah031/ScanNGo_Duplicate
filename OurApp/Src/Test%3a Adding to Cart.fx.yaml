@@ -1,0 +1,179 @@
+"'Test: Adding to Cart' As screen":
+
+    Form1 As form:
+        DataSource: =Data
+        Height: =560
+        Item: =BrowseGallery.Selected
+        Width: =640
+        ZIndex: =1
+
+        ItemName_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ItemName"
+            Default: =ThisItem.ItemName
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"ItemName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =71
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =SearchValue
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+        Description_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Description"
+            Default: =ThisItem.Description
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Description")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+        Price_DataCard4 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Price"
+            Default: =ThisItem.Price
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Price")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue14 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: ="$" & Text(BrowseGallery.Selected.Price) & ".00"
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                ZIndex: =2
+
+    Label3 As label:
+        Height: =70
+        Size: =21
+        Text: |
+            ="Quantity: " & Slider1.Value
+        Width: =560
+        X: =40
+        Y: =527
+        ZIndex: =2
+
+    Slider1 As slider:
+        Default: =1
+        Height: =70
+        Max: =20
+        Width: =560
+        X: =40
+        Y: =597
+        ZIndex: =3
+
+    Label11 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Total Price of Item(s): $" & Slider1.Value * BrowseGallery.Selected.Price & ".00"
+        Width: =560
+        X: =40
+        Y: =667
+        ZIndex: =4
+
+    Button3 As button:
+        Height: =70
+        OnSelect: |-
+            =Collect(ShoppingCart,{ItemName: BrowseGallery.Selected.ItemName,ItemCost: BrowseGallery.Selected.Price,Quantity: Slider1.Value}); Navigate('Browsing Gallery',ScreenTransition.Cover)
+        Size: =24
+        Text: ="ADD TO CART"
+        Width: =280
+        X: =40
+        Y: =737
+        ZIndex: =5
+
+    Icon12 As icon.Add:
+        Icon: =Icon.Add
+        OnSelect: =Label1 + 1
+        X: =369
+        Y: =930
+        ZIndex: =6
+
+    Label1 As label:
+        Height: =70
+        Size: =35
+        Text: =0
+        Width: =76
+        X: =293
+        Y: =924
+        ZIndex: =7
+

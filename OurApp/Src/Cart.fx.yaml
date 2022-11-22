@@ -1,0 +1,290 @@
+Cart As screen:
+    OnVisible: =
+
+    Label1_8 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =108
+        Size: =35
+        Text: =""
+        Width: =640
+        ZIndex: =1
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =600
+        Items: =collectMultiScan
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =253
+        Y: =250
+        ZIndex: =1
+
+        Image9 As image:
+            Height: =120
+            Image: =Image8
+            OnSelect: =Select(Parent)
+            Width: =123
+            X: =14
+            Y: =66
+            ZIndex: =1
+
+        Title12 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image9.Width - 104
+            X: =159
+            Y: =43
+            ZIndex: =2
+
+        Subtitle10 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ItemDescription
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title12.Width
+            X: =159
+            Y: =79
+            ZIndex: =3
+
+        Body4 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Price  
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Subtitle10.Width
+            X: =159
+            Y: =115
+            ZIndex: =4
+
+        Separator12 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =6
+
+        Body4_1 As label:
+            Height: =43
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Qty
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Subtitle10.Width
+            X: =159
+            Y: =144
+            ZIndex: =7
+
+        Body4_2 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |
+                =ThisItem.SubTotal
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Subtitle10.Width
+            X: =159
+            Y: =187
+            ZIndex: =8
+
+        Icon14 As icon.Trash:
+            Icon: =Icon.Trash
+            OnSelect: |
+                =Remove(collectMultiScan, ThisItem);
+            X: =550
+            Y: =94
+            ZIndex: =9
+
+    Label1_9 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =128
+        Size: =35
+        Text: =""
+        Width: =640
+        Y: =1008
+        ZIndex: =2
+
+    Icon8_3 As icon.Person:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.Person
+        X: =94
+        Y: =1026
+        ZIndex: =5
+
+    Icon9_3 As icon.ShoppingCart:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.ShoppingCart
+        X: =478
+        Y: =1026
+        ZIndex: =6
+
+    Icon10_2 As icon.Camera:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =75
+        Icon: =Icon.Camera
+        OnSelect: =
+        Width: =98
+        X: =271
+        Y: =1015
+        ZIndex: =7
+
+    Label9_8 As label:
+        Align: =Align.Center
+        Height: =32
+        Size: =17
+        Text: ="Guest"
+        Width: =251
+        Y: =1090
+        ZIndex: =9
+
+    Label9_9 As label:
+        Align: =Align.Center
+        Height: =32
+        Size: =21
+        Text: ="Scan"
+        Width: =77
+        X: =281
+        Y: =1090
+        ZIndex: =10
+
+    Label9_10 As label:
+        Height: =32
+        Size: =17
+        Text: ="Cart"
+        Width: =63
+        X: =490
+        Y: =1090
+        ZIndex: =12
+
+    Icon11_2 As icon.Search:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =53
+        Icon: =Icon.Search
+        Width: =52
+        X: =42
+        Y: =27
+        ZIndex: =13
+
+    Icon7_1 As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =52
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Customer Home Page')
+        X: =543
+        Y: =16
+        ZIndex: =22
+
+    Label13_1 As label:
+        Align: =Align.Center
+        OnSelect: =Navigate('Customer Home Page')
+        Size: =16
+        Text: ="Home"
+        Width: =100
+        X: =525
+        Y: =56
+        ZIndex: =23
+
+    Button5 As button:
+        DisabledFill: =RGBA(244, 244, 244, 0)
+        Fill: =RGBA(39, 113, 194, 1)
+        Height: =70
+        OnSelect: =Set(_purchase, true)
+        Size: =24
+        Text: ="Purchase"
+        Width: =280
+        X: =16
+        Y: =916
+        ZIndex: =24
+
+    TotalCost As label:
+        FontWeight: =FontWeight.Bold
+        Height: =72
+        Size: =21
+        Text: |-
+            =With({ST: Sum(collectMultiScan, SubTotal)}, "Total: " & Text(ST, "[$-en-us]$#,##0.00"))
+        Width: =138
+        X: =415
+        Y: =178
+        ZIndex: =25
+
+    Image1_3 As image:
+        Height: =125
+        Image: ='My project-1 (14)'
+        Width: =156
+        X: =238
+        ZIndex: =31
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        Rectangle2 As rectangle:
+            Fill: =RGBA(215, 223, 240, 1)
+            Height: =338
+            Visible: =_purchase
+            Width: =583
+            X: =28
+            Y: =369
+            ZIndex: =26
+
+        Label16 As label:
+            Align: =Align.Center
+            Height: =239
+            Size: =24
+            Text: |-
+                ="Thank you for shopping with us!
+                
+                Please head towards the cashier to pay for your items"
+            Visible: =_purchase
+            Width: =549
+            X: =42
+            Y: =376
+            ZIndex: =27
+
+        Button6 As button:
+            Height: =60
+            OnSelect: =Set(_purchase, false)
+            Size: =16
+            Text: ="Continue Shopping"
+            Visible: =_purchase
+            Width: =229
+            X: =52
+            Y: =615
+            ZIndex: =28
+
+        Button6_1 As button:
+            Height: =60
+            OnSelect: =Button5.DisplayMode.Disabled + Set(_purchase, false)
+            Size: =16
+            Text: ="DONE"
+            Visible: =_purchase
+            Width: =229
+            X: =358
+            Y: =615
+            ZIndex: =30
+

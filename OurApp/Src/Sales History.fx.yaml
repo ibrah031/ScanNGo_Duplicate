@@ -1,0 +1,106 @@
+"'Sales History' As screen":
+
+    Label1_11 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =108
+        Size: =35
+        Text: =""
+        Width: =640
+        ZIndex: =1
+
+    logo As image:
+        Height: =125
+        Image: ='My project-1 (14)'
+        Width: =156
+        X: =484
+        ZIndex: =2
+
+    Icon1_1 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Employee Menu')
+        X: =9
+        Y: =22
+        ZIndex: =3
+
+    LblAppName3_2 As label:
+        Align: =Align.Center
+        Height: =84
+        Size: =27
+        Text: ="Sales History"
+        Width: =301
+        Wrap: =false
+        X: =169
+        Y: =12
+        ZIndex: =4
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =1028
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =108
+        ZIndex: =5
+
+        Image2_1 As image:
+            Height: =128
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title2_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image2_1.Width - 104
+            X: =Image2_1.X + Image2_1.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle2_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_1.Width
+            X: =Title2_1.X
+            Y: =Title2_1.Y + Title2_1.Height + 4
+            ZIndex: =3
+
+        NextArrow2_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+

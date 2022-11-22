@@ -1,0 +1,173 @@
+Customer_Sign_Up As screen:
+    Fill: =RGBA(214, 223, 238, 1)
+
+    Button2_1 As button:
+        Height: =50
+        OnSelect: =Navigate(FirstScreen)
+        Size: =24
+        Text: ="Home"
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Label1_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =108
+        Size: =35
+        Text: =""
+        Width: =640
+        ZIndex: =3
+
+    Label2 As label:
+        Height: =25
+        HoverBorderColor: =Self.Fill
+        Live: =Live.Polite
+        OnSelect: =Navigate(FirstScreen)
+        PressedBorderColor: =Self.Fill
+        Size: =16
+        Text: ="Back"
+        Width: =84
+        X: =78
+        Y: =41
+        ZIndex: =6
+
+    Icon3 As icon.ArrowLeft:
+        AccessibleLabel: =
+        Height: =48
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(FirstScreen)
+        Width: =34
+        X: =40
+        Y: =30
+        ZIndex: =7
+
+    Label4 As label:
+        Height: =70
+        Size: =25
+        Text: ="Sign Up "
+        Width: =560
+        X: =60
+        Y: =224
+        ZIndex: =8
+
+    Label5 As label:
+        Height: =70
+        Italic: =true
+        Size: =15
+        Text: ="Save time by signing up with Scan N Go and have all your information saved for an easier shopping experience! "
+        Width: =560
+        X: =60
+        Y: =306
+        ZIndex: =9
+
+    TextInput1 As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Clear: =true
+        Default: ="Text input"
+        Height: =46
+        HintText: ="Enter Email"
+        Italic: =true
+        Size: =14
+        Width: =430
+        X: =60
+        Y: =536
+        ZIndex: =10
+
+    TextInput1_1 As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Clear: =true
+        Default: ="Text input"
+        Height: =46
+        HintText: ="Create Password"
+        Italic: =true
+        Mode: =TextMode.Password
+        Size: =14
+        Width: =430
+        X: =60
+        Y: =651
+        ZIndex: =11
+
+    Label6 As label:
+        Font: =Font.'Segoe UI'
+        Height: =60
+        Size: =18
+        Text: ="Email"
+        Width: =560
+        X: =60
+        Y: =483
+        ZIndex: =12
+
+    Label6_1 As label:
+        Font: =Font.'Segoe UI'
+        Height: =60
+        Size: =18
+        Text: ="Password"
+        Width: =560
+        X: =60
+        Y: =592
+        ZIndex: =13
+
+    Icon4 As icon.Person:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =39
+        Icon: =Icon.Person
+        Width: =44
+        X: =486
+        Y: =534
+        ZIndex: =14
+
+    Icon5 As icon.Lock:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =46
+        Icon: =Icon.Lock
+        Width: =37
+        X: =490
+        Y: =651
+        ZIndex: =15
+
+    Button1 As button:
+        BorderColor: =ColorFade(Self.Fill, -100%)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =42
+        OnSelect: =Navigate('Customer Home Page')
+        Size: =18
+        Text: ="Sign up"
+        Width: =223
+        X: =60
+        Y: =753
+        ZIndex: =16
+
+    Label7 As label:
+        Height: =70
+        Italic: =true
+        Size: =16
+        Text: ="Continue as a guest, click here!"
+        Underline: =true
+        Width: =560
+        X: =60
+        Y: =795
+        ZIndex: =17
+
+    Label8 As label:
+        Height: =70
+        Italic: =true
+        Size: =18
+        Text: ="Already have an account? Login here"
+        Underline: =true
+        Width: =560
+        X: =60
+        Y: =387
+        ZIndex: =18
+
+    Image1 As image:
+        Height: =99
+        Image: ='My project-1 (14)'
+        Width: =131
+        X: =509
+        Y: =4
+        ZIndex: =19
+

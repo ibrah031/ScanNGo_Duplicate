@@ -1,0 +1,258 @@
+"'Customer Home Page' As screen":
+    OnVisible: =
+
+    Label1_2 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =108
+        Size: =35
+        Text: =""
+        Width: =640
+        ZIndex: =1
+
+    "BrowseGallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =613
+        Items: =//Search(Data,SearchBox.Text,"Title")
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Width: =Parent.Width
+        Y: =TextSearchBox1.Y + TextSearchBox1.Height
+        ZIndex: =1
+
+        Title8 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =//ThisItem.ItemName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =//ThisItem.Description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title8.Y + Title8.Height + 4
+            ZIndex: =2
+
+        Separator8 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    Label1_3 As label:
+        Align: =Align.Center
+        Fill: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        Height: =128
+        Size: =35
+        Text: =""
+        Width: =640
+        Y: =1008
+        ZIndex: =2
+
+    Icon8 As icon.Person:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.Person
+        X: =94
+        Y: =1026
+        ZIndex: =5
+
+    Icon9 As icon.ShoppingCart:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.ShoppingCart
+        OnSelect: =Navigate(Cart)
+        X: =478
+        Y: =1026
+        ZIndex: =6
+
+    Icon10 As icon.Camera:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =75
+        Icon: =Icon.Camera
+        OnSelect: =Select(BarcodeScanner1)
+        Width: =98
+        X: =271
+        Y: =1015
+        ZIndex: =7
+
+    Label9_1 As label:
+        Align: =Align.Center
+        Height: =32
+        Size: =17
+        Text: ="Guest"
+        Width: =251
+        Y: =1090
+        ZIndex: =9
+
+    Label9_2 As label:
+        Align: =Align.Center
+        Height: =32
+        Size: =21
+        Text: ="Scan"
+        Width: =77
+        X: =281
+        Y: =1090
+        ZIndex: =10
+
+    Label9_4 As label:
+        Align: =Align.Center
+        Height: =32
+        OnSelect: =Navigate(Cart)
+        Size: =17
+        Text: ="Cart"
+        Width: =63
+        X: =479
+        Y: =1090
+        ZIndex: =12
+
+    Icon11 As icon.Search:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =53
+        Icon: =Icon.Search
+        OnSelect: =
+        Width: =52
+        X: =42
+        Y: =22
+        ZIndex: =13
+
+    BarcodeScanner1 As barcodeScanner:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =128
+        OnScan: |-
+            =// check if scanned item was found
+             Set(SearchValue, BarcodeScanner1.Value);
+             If(
+                SearchValue in Data.ItemName,
+                true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2), 
+                //Set(barVal, true) + 
+                //Set(browsegallery, true),
+                false +  Notify("ITEM NOT FOUND", NotificationType.Error)
+            )
+             
+        Size: =24
+        Text: ="Scan"
+        Visible: =false
+        Width: =105
+        X: =266
+        Y: =1008
+        ZIndex: =17
+
+    Label10 As label:
+        Align: =Align.Center
+        Height: =182
+        Size: =28
+        Text: ="Click the Scan icon to start shopping!"
+        Visible: =scan_mesg = true
+        Width: =605
+        X: =35
+        Y: =861
+        ZIndex: =18
+
+    Icon2 As icon.ArrowDown:
+        Height: =349
+        Visible: =arrow = true
+        Width: =118
+        X: =258
+        Y: =659
+        ZIndex: =19
+
+    Icon6 As icon.Leave:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =47
+        Icon: =Icon.Leave
+        OnSelect: =Set(_exit,true) + Set(scan_mesg, false) + Set(arrow, false) 
+        X: =542
+        Y: =22
+        ZIndex: =20
+
+    Label9 As label:
+        Height: =46
+        Size: =16
+        Text: ="Logout"
+        Width: =106
+        X: =534
+        Y: =62
+        ZIndex: =21
+
+    SearchBox As text:
+        Default: =""
+        Height: =60
+        HintText: ="Search on Name"
+        Size: =21
+        Width: =266
+        X: =113
+        Y: =22
+        ZIndex: =26
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        Rectangle1 As rectangle:
+            Fill: =RGBA(214, 223, 238, 1)
+            Height: =220
+            Visible: =_exit
+            Width: =355
+            X: =134
+            Y: =230
+            ZIndex: =22
+
+        Label12 As label:
+            Align: =Align.Center
+            Height: =70
+            Size: =18
+            Text: |-
+                ="Are you sure you want to 
+                Logout?"
+            Visible: =_exit
+            Width: =415
+            X: =110
+            Y: =251
+            ZIndex: =23
+
+        Button4 As button:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =35
+            OnSelect: =Navigate(FirstScreen) + Set(_exit,false) + Set(scan_mesg, true) + Set(arrow, true)
+            Size: =16
+            Text: ="Yes"
+            Visible: =_exit
+            Width: =141
+            X: =158
+            Y: =383
+            ZIndex: =24
+
+        Button4_1 As button:
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =35
+            OnSelect: =Set(_exit,false) + Set(scan_mesg,true) + Set(arrow, true) 
+            Size: =16
+            Text: ="NO"
+            Visible: =_exit
+            Width: =141
+            X: =324
+            Y: =383
+            ZIndex: =25
+

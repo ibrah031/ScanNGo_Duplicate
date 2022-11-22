@@ -1,0 +1,16 @@
+SoyCandleImage As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Image4 As image:
+        Height: =370
+        Image: ='soy candle'
+        Width: =382
+        X: =148
+        Y: =164
+        ZIndex: =1
+
