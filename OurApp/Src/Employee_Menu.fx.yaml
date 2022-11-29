@@ -1,4 +1,4 @@
-"'Employee Menu' As screen":
+Employee_Menu As screen:
     BackgroundImage: =
     Fill: =RGBA(0, 0, 0, 0)
 
@@ -8,6 +8,7 @@
         OnSelect: =Navigate(Receipts)
         Size: =24
         Text: ="Receipts"
+        Visible: =false
         Width: =361
         X: =138
         Y: =588
@@ -21,7 +22,7 @@
         Text: ="Current Inventory"
         Width: =361
         X: =138
-        Y: =877
+        Y: =655
         ZIndex: =2
 
     Label1_10 As label:
@@ -41,8 +42,8 @@
         Size: =24
         Text: ="Add Inventory"
         Width: =361
-        X: =138
-        Y: =730
+        X: =139
+        Y: =375
         ZIndex: =5
 
     Icon6_1 As icon.Leave:
@@ -63,6 +64,7 @@
         Text: |-
             ="Sales
             "
+        Visible: =false
         Width: =361
         X: =138
         Y: =451

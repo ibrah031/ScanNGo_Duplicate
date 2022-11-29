@@ -92,7 +92,7 @@ Receipts As screen:
     Icon1 As icon.ArrowLeft:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('Employee Menu')
+        OnSelect: =Navigate(Employee_Menu)
         X: =24
         Y: =24
         ZIndex: =4

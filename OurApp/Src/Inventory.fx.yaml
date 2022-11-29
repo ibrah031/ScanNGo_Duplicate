@@ -159,7 +159,7 @@
     Arrow2_2 As arrow.backArrow:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =54
-        OnSelect: =Navigate('Employee Menu')
+        OnSelect: =Navigate(Employee_Menu)
         Width: =52
         X: =16
         Y: =17
