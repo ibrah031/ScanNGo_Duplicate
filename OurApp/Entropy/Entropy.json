@@ -293,7 +293,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/30/2022 22:52:07",
+  "HeaderLastSavedDateTimeUTC": "11/30/2022 23:03:20",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3ede3aa5-3814-40cd-91e0-d6f3385e0167": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/cfdb8c58d0fd45de8749330830243567\""
@@ -564,7 +564,7 @@
     "Image6": 222,
     "Image7": 247,
     "Image8_1": 54,
-    "Image9": 82,
+    "Image9": 83,
     "Inventory": 156,
     "ItemName_DataCard10": 173,
     "ItemName_DataCard2": 230,
@@ -663,7 +663,7 @@
     "StarVisible54": 189,
     "StarVisible55": 164,
     "Subtitle1": 154,
-    "Subtitle10": 83,
+    "Subtitle10": 82,
     "Subtitle2": 140,
     "Subtitle2_1": 129,
     "Subtitle5": 29,

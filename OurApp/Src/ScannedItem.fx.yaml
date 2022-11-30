@@ -58,7 +58,8 @@ ScannedItem As screen:
                         SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
                     }
                 )
-            )
+            );
+            Notify("ITEM WAS ADDED TO CART!",Information,5000);
         Size: =24
         Text: ="Add to cart"
         Visible: =true//_ATC
