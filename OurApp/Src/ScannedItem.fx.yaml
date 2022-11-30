@@ -153,10 +153,20 @@ ScannedItem As screen:
         Height: =762
         Items: |-
             =//SearchValue must be a string
-            If (BarcodeScanner1.Pressed = true,Search (Data, SearchValue , "ItemName"))+
-            
-            //SearchValue must be a string
-            If (BarcodeScanner1Duplicate.Pressed = true, Search(Data, SearchValue2 , "ItemName"))
+            If (
+                BarcodeScanner1.Pressed = true,
+                Search (
+                    Data,
+                    SearchValue,
+                    "ItemName"
+                ),
+                BarcodeScanner1Duplicate.Pressed = true,
+                Search(
+                    Data,
+                    SearchValue2,
+                    "ItemName"
+                )
+            )
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
