@@ -2654,36 +2654,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Cart.Gallery2.Image9.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Cart.Gallery2.Image9.Image",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "Cart",
-                "type": "Cart.Gallery2.Image9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Customer Home Page'.BrowseGallery1_2.Y"
                 }
               ],

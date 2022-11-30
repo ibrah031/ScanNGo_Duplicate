@@ -24,11 +24,11 @@ Cart As screen:
         Image9 As image:
             Height: =120
             Image: |+
-                =If( Title1_1.Text = "Lavender Candle", 'Lavender Candle') & 
-                If(Title1_1.Text = "Soy Candle", 'Soy Candle') &
-                If( Title1_1.Text = "Wood Candle", 'Wood Candle') & 
-                If( Title1_1.Text = "Apple Candle", 'Apple Candle') & 
-                If( Title1_1.Text = "Beach Scented Candle", 'Beach Scented Candle') 
+                =If( ThisItem.Title = "Lavender Candle", 'Lavender Candle') & 
+                If(ThisItem.Title = "Soy Candle", 'Soy Candle') &
+                If( ThisItem.Title = "Wood Candle", 'Wood Candle') & 
+                If( ThisItem.Title = "Apple Candle", 'Apple Candle') & 
+                If( ThisItem.Title = "Beach Scented Candle", 'Beach Scented Candle') 
                 
             OnSelect: =Select(Parent)
             Width: =123
