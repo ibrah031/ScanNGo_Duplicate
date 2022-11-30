@@ -122,79 +122,6 @@ Cart As screen:
             Y: =94
             ZIndex: =9
 
-    Label1_9 As label:
-        Align: =Align.Center
-        Fill: =RGBA(139, 176, 143, 1)
-        Font: =Font.Georgia
-        Height: =128
-        Size: =35
-        Text: =""
-        Width: =640
-        Y: =1008
-        ZIndex: =2
-
-    Icon8_3 As icon.Person:
-        Color: =RGBA(237, 234, 232, 1)
-        Icon: =Icon.Person
-        X: =94
-        Y: =1026
-        ZIndex: =5
-
-    Icon9_3 As icon.ShoppingCart:
-        Color: =RGBA(237, 234, 232, 1)
-        DisabledColor: =RGBA(237, 234, 232, 1)
-        Icon: =Icon.ShoppingCart
-        X: =478
-        Y: =1026
-        ZIndex: =6
-
-    Icon10_2 As icon.Camera:
-        Color: =RGBA(237, 234, 232, 1)
-        Height: =75
-        Icon: =Icon.Camera
-        OnSelect: =
-        Width: =98
-        X: =271
-        Y: =1015
-        ZIndex: =7
-
-    Label9_8 As label:
-        Align: =Align.Center
-        Color: =RGBA(237, 234, 232, 1)
-        Font: =Font.'Open Sans Condensed'
-        FontWeight: =FontWeight.Semibold
-        Height: =32
-        Size: =20
-        Text: ="Guest"
-        Width: =251
-        Y: =1090
-        ZIndex: =9
-
-    Label9_9 As label:
-        Align: =Align.Center
-        Color: =RGBA(237, 234, 232, 1)
-        Font: =Font.'Open Sans Condensed'
-        FontWeight: =FontWeight.Semibold
-        Height: =32
-        Size: =25
-        Text: ="Scan"
-        Width: =77
-        X: =281
-        Y: =1090
-        ZIndex: =10
-
-    Label9_10 As label:
-        Color: =RGBA(237, 234, 232, 1)
-        Font: =Font.'Open Sans Condensed'
-        FontWeight: =FontWeight.Semibold
-        Height: =32
-        Size: =20
-        Text: ="Cart"
-        Width: =63
-        X: =490
-        Y: =1090
-        ZIndex: =12
-
     Icon11_2 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
         Height: =53
@@ -306,4 +233,113 @@ Cart As screen:
             X: =358
             Y: =615
             ZIndex: =30
+
+    Group5_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =40
+
+        Label1_7 As label:
+            Align: =Align.Center
+            Fill: =RGBA(139, 176, 143, 1)
+            Font: =Font.Georgia
+            Height: =128
+            Size: =35
+            Text: =""
+            Width: =640
+            Y: =1008
+            ZIndex: =32
+
+        Icon8_2 As icon.Person:
+            Color: =RGBA(237, 234, 232, 1)
+            Icon: =Icon.Person
+            X: =73
+            Y: =1031
+            ZIndex: =33
+
+        Icon9_2 As icon.ShoppingCart:
+            Color: =RGBA(237, 234, 232, 1)
+            Icon: =Icon.ShoppingCart
+            OnSelect: =Navigate(Cart)
+            X: =498
+            Y: =1026
+            ZIndex: =34
+
+        Label9_7 As label:
+            Align: =Align.Center
+            Color: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            Size: =20
+            Text: ="Guest"
+            Width: =96
+            X: =57
+            Y: =1090
+            ZIndex: =35
+
+        Label9_8 As label:
+            Align: =Align.Center
+            Color: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            Size: =25
+            Text: ="Scan"
+            Width: =77
+            X: =277
+            Y: =1090
+            ZIndex: =36
+
+        Label9_9 As label:
+            Align: =Align.Center
+            Color: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            OnSelect: =Navigate(Cart)
+            Size: =20
+            Text: ="Cart"
+            Width: =63
+            X: =499
+            Y: =1090
+            ZIndex: =37
+
+        BarcodeScanner1_2 As barcodeScanner:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =128
+            OnScan: |-
+                =// check if scanned item was found
+                 Set(SearchValue3, BarcodeScanner1_2.Value);
+                 Set(BS1, false);
+                 Set(BS2, false);
+                 Set(BS3, false);
+                 If(
+                    SearchValue2 in Data.ItemName,
+                    true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2) + Set(BS3, true), 
+                    //Set(barVal, true) + 
+                    //Set(browsegallery, true),
+                    false +  Notify("ITEM NOT FOUND", NotificationType.Error)
+                )
+                 
+            Size: =24
+            Text: ="Scan"
+            Visible: =false
+            Width: =105
+            X: =263
+            Y: =1008
+            ZIndex: =38
+
+        Icon10_2 As icon.Camera:
+            Color: =RGBA(237, 234, 232, 1)
+            Height: =75
+            Icon: =Icon.Camera
+            OnSelect: =Select(BarcodeScanner1_2)
+            Width: =98
+            X: =266
+            Y: =1020
+            ZIndex: =39
 
