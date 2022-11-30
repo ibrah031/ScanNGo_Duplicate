@@ -60,6 +60,8 @@ ScannedItem As screen:
                 )
             );
             Notify("ITEM WAS ADDED TO CART!",Information,5000);
+            
+            Set(varIncrement, varIncrement + 1);
         Size: =24
         Text: ="Add to cart"
         Visible: =true//_ATC
@@ -239,6 +241,16 @@ ScannedItem As screen:
             Width: =355
             X: =122
             ZIndex: =10
+
+    Label14 As label:
+        BorderThickness: =2
+        Height: =48
+        Size: =10
+        Text: =varIncrement
+        Width: =48
+        X: =559
+        Y: =1008
+        ZIndex: =25
 
     Group5_1 As group:
         Height: =5
