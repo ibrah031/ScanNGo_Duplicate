@@ -89,6 +89,12 @@ ScannedItem As screen:
                     Data,
                     SearchValue2,
                     "ItemName"
+                ),
+                BS3 = true,
+                Search(
+                    Data,
+                    SearchValue3,
+                    "ItemName"
                 )
             )
         Layout: =Layout.Vertical

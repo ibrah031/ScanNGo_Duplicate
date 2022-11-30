@@ -318,7 +318,7 @@ Cart As screen:
                  Set(BS2, false);
                  Set(BS3, false);
                  If(
-                    SearchValue2 in Data.ItemName,
+                    SearchValue3 in Data.ItemName,
                     true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2) + Set(BS3, true), 
                     //Set(barVal, true) + 
                     //Set(browsegallery, true),
