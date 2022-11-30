@@ -337,7 +337,7 @@ Cart As screen:
             Color: =RGBA(237, 234, 232, 1)
             Height: =75
             Icon: =Icon.Camera
-            OnSelect: =Select(BarcodeScanner1_2)
+            OnSelect: =Select(BarcodeScanner1_2) + Reset(BrowseGallery1_1)
             Width: =98
             X: =266
             Y: =1020
