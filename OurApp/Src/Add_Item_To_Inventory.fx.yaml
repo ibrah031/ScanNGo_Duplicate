@@ -4,6 +4,7 @@
         UpdateContext({resettext: !resettext})
 
     RectQuickActionBar3 As rectangle:
+        Fill: =RGBA(153, 60, 61, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -38,12 +39,15 @@
         ZIndex: =3
 
     LblAppName3 As label:
+        Align: =Align.Center
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Bold
         Height: =88
-        Size: =27
-        Text: ="Add Item to Inventory"
+        Size: =35
+        Text: ="ADD ITEM"
         Width: =Parent.Width - IconCancel2.Width - IconAccept2.Width
         Wrap: =false
-        X: =126
+        X: =88
         ZIndex: =4
 
     Form8 As form:

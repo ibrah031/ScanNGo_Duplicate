@@ -1,9 +1,10 @@
 ScannedItem As screen:
+    Fill: =RGBA(237, 234, 232, 1)
     OnVisible: =
 
     Label1_6 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.Georgia
         Height: =108
         Size: =35
@@ -13,7 +14,7 @@ ScannedItem As screen:
 
     Label1_7 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.Georgia
         Height: =128
         Size: =35
@@ -23,58 +24,68 @@ ScannedItem As screen:
         ZIndex: =2
 
     Icon8_2 As icon.Person:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(237, 234, 232, 1)
         Icon: =Icon.Person
-        X: =94
-        Y: =1026
+        X: =73
+        Y: =1021
         ZIndex: =5
 
     Icon9_2 As icon.ShoppingCart:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(237, 234, 232, 1)
         Icon: =Icon.ShoppingCart
         OnSelect: =Navigate(Cart)
-        X: =495
-        Y: =1026
+        X: =488
+        Y: =1021
         ZIndex: =6
 
     Icon10_1 As icon.Camera:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(237, 234, 232, 1)
         Height: =75
         Icon: =Icon.Camera
         OnSelect: |
             =
         Width: =98
-        X: =271
+        X: =260
         Y: =1015
         ZIndex: =7
 
     Label9_5 As label:
         Align: =Align.Center
-        Height: =32
-        Size: =17
+        Color: =RGBA(237, 234, 232, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =20
         Text: ="Guest"
-        Width: =251
+        Width: =91
+        X: =60
         Y: =1090
         ZIndex: =9
 
     Label9_6 As label:
         Align: =Align.Center
+        Color: =RGBA(237, 234, 232, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =32
-        Size: =21
+        Size: =25
         Text: ="Scan"
         Width: =77
-        X: =280
-        Y: =1090
+        X: =270
+        Y: =1085
         ZIndex: =10
 
     Label9_7 As label:
         Align: =Align.Center
+        Color: =RGBA(237, 234, 232, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =32
-        Size: =17
+        Size: =20
         Text: ="Cart"
         Width: =63
-        X: =496
-        Y: =1090
+        X: =490
+        Y: =1087
         ZIndex: =12
 
     Icon11_1 As icon.Search:

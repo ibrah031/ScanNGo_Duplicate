@@ -1,9 +1,10 @@
 Cart As screen:
+    Fill: =RGBA(237, 234, 232, 1)
     OnVisible: =
 
     Label1_8 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.Georgia
         Height: =108
         Size: =35
@@ -117,7 +118,7 @@ Cart As screen:
 
     Label1_9 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.Georgia
         Height: =128
         Size: =35
@@ -127,21 +128,22 @@ Cart As screen:
         ZIndex: =2
 
     Icon8_3 As icon.Person:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(237, 234, 232, 1)
         Icon: =Icon.Person
         X: =94
         Y: =1026
         ZIndex: =5
 
     Icon9_3 As icon.ShoppingCart:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(237, 234, 232, 1)
+        DisabledColor: =RGBA(237, 234, 232, 1)
         Icon: =Icon.ShoppingCart
         X: =478
         Y: =1026
         ZIndex: =6
 
     Icon10_2 As icon.Camera:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(237, 234, 232, 1)
         Height: =75
         Icon: =Icon.Camera
         OnSelect: =
@@ -152,8 +154,11 @@ Cart As screen:
 
     Label9_8 As label:
         Align: =Align.Center
+        Color: =RGBA(237, 234, 232, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =32
-        Size: =17
+        Size: =20
         Text: ="Guest"
         Width: =251
         Y: =1090
@@ -161,8 +166,11 @@ Cart As screen:
 
     Label9_9 As label:
         Align: =Align.Center
+        Color: =RGBA(237, 234, 232, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =32
-        Size: =21
+        Size: =25
         Text: ="Scan"
         Width: =77
         X: =281
@@ -170,8 +178,11 @@ Cart As screen:
         ZIndex: =10
 
     Label9_10 As label:
+        Color: =RGBA(237, 234, 232, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =32
-        Size: =17
+        Size: =20
         Text: ="Cart"
         Width: =63
         X: =490
@@ -198,8 +209,10 @@ Cart As screen:
 
     Label13_1 As label:
         Align: =Align.Center
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         OnSelect: =Navigate('Customer Home Page')
-        Size: =16
+        Size: =19
         Text: ="Home"
         Width: =100
         X: =525

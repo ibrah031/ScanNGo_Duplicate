@@ -3,6 +3,7 @@
     OnVisible: =
 
     RectQuickActionBar4 As rectangle:
+        Fill: =RGBA(153, 60, 61, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -37,12 +38,14 @@
         ZIndex: =3
 
     LblAppName4 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Bold
         Height: =88
-        Size: =27
-        Text: ="Update Item in Inventory"
-        Width: =Parent.Width - IconCancel3.Width - IconAccept3.Width
+        Size: =35
+        Text: ="UPDATE ITEM"
+        Width: =256
         Wrap: =false
-        X: =IconCancel3.X + IconCancel3.Width
+        X: =192
         ZIndex: =4
 
     ItemWanted As dropdown:

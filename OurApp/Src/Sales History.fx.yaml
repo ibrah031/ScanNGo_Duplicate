@@ -2,7 +2,7 @@
 
     Label1_11 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(153, 60, 61, 1)
         Font: =Font.Georgia
         Height: =108
         Size: =35
@@ -27,9 +27,11 @@
 
     LblAppName3_2 As label:
         Align: =Align.Center
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Bold
         Height: =84
-        Size: =27
-        Text: ="Sales History"
+        Size: =35
+        Text: ="SALES HISTORY"
         Width: =301
         Wrap: =false
         X: =169

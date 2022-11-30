@@ -5,11 +5,12 @@ Employee_Sign_Up As screen:
     Label1_4 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(166, 166, 166, 1)
-        Font: =Font.Georgia
+        Fill: =RGBA(153, 60, 61, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Bold
         Height: =108
         Size: =35
-        Text: ="Employee"
+        Text: ="EMPLOYEE"
         Width: =640
         ZIndex: =1
 

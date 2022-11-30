@@ -1,5 +1,5 @@
 Customer_Sign_Up As screen:
-    Fill: =RGBA(214, 223, 238, 1)
+    Fill: =RGBA(237, 234, 232, 1)
 
     Button2_1 As button:
         Height: =50
@@ -13,7 +13,7 @@ Customer_Sign_Up As screen:
     Label1_1 As label:
         Align: =Align.Center
         BorderColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.Georgia
         Height: =108
         Size: =35
@@ -22,20 +22,24 @@ Customer_Sign_Up As screen:
         ZIndex: =3
 
     Label2 As label:
+        Align: =Align.Center
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Bold
         Height: =25
         HoverBorderColor: =Self.Fill
         Live: =Live.Polite
         OnSelect: =Navigate(FirstScreen)
         PressedBorderColor: =Self.Fill
         Size: =16
-        Text: ="Back"
-        Width: =84
-        X: =78
+        Text: ="RETURN"
+        Width: =122
+        X: =60
         Y: =41
         ZIndex: =6
 
     Icon3 As icon.ArrowLeft:
         AccessibleLabel: =
+        Color: =RGBA(0, 0, 0, 1)
         Height: =48
         Icon: =Icon.ArrowLeft
         OnSelect: =Navigate(FirstScreen)
@@ -45,22 +49,24 @@ Customer_Sign_Up As screen:
         ZIndex: =7
 
     Label4 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =70
-        Size: =25
+        Size: =30
         Text: ="Sign Up "
         Width: =560
-        X: =60
-        Y: =224
+        X: =40
+        Y: =191
         ZIndex: =8
 
     Label5 As label:
         Height: =70
         Italic: =true
-        Size: =15
+        Size: =16
         Text: ="Save time by signing up with Scan N Go and have all your information saved for an easier shopping experience! "
         Width: =560
-        X: =60
-        Y: =306
+        X: =40
+        Y: =261
         ZIndex: =9
 
     TextInput1 As text:
@@ -73,7 +79,7 @@ Customer_Sign_Up As screen:
         Size: =14
         Width: =430
         X: =60
-        Y: =536
+        Y: =402
         ZIndex: =10
 
     TextInput1_1 As text:
@@ -87,36 +93,34 @@ Customer_Sign_Up As screen:
         Size: =14
         Width: =430
         X: =60
-        Y: =651
+        Y: =526
         ZIndex: =11
 
     Label6 As label:
-        Font: =Font.'Segoe UI'
         Height: =60
         Size: =18
         Text: ="Email"
         Width: =560
         X: =60
-        Y: =483
+        Y: =349
         ZIndex: =12
 
     Label6_1 As label:
-        Font: =Font.'Segoe UI'
         Height: =60
         Size: =18
         Text: ="Password"
         Width: =560
         X: =60
-        Y: =592
+        Y: =482
         ZIndex: =13
 
     Icon4 As icon.Person:
         Color: =RGBA(0, 0, 0, 1)
-        Height: =39
+        Height: =46
         Icon: =Icon.Person
-        Width: =44
-        X: =486
-        Y: =534
+        Width: =37
+        X: =496
+        Y: =402
         ZIndex: =14
 
     Icon5 As icon.Lock:
@@ -124,32 +128,32 @@ Customer_Sign_Up As screen:
         Height: =46
         Icon: =Icon.Lock
         Width: =37
-        X: =490
-        Y: =651
+        X: =496
+        Y: =526
         ZIndex: =15
 
     Button1 As button:
         BorderColor: =ColorFade(Self.Fill, -100%)
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =42
+        Height: =43
         OnSelect: =Navigate('Customer Home Page')
         Size: =18
-        Text: ="Sign up"
-        Width: =223
-        X: =60
-        Y: =753
+        Text: ="Sign Up"
+        Width: =166
+        X: =330
+        Y: =632
         ZIndex: =16
 
     Label7 As label:
         Height: =70
         Italic: =true
-        Size: =16
+        Size: =18
         Text: ="Continue as a guest, click here!"
         Underline: =true
         Width: =560
-        X: =60
-        Y: =795
+        X: =40
+        Y: =949
         ZIndex: =17
 
     Label8 As label:
@@ -159,15 +163,36 @@ Customer_Sign_Up As screen:
         Text: ="Already have an account? Login here"
         Underline: =true
         Width: =560
-        X: =60
-        Y: =387
+        X: =40
+        Y: =795
         ZIndex: =18
 
     Image1 As image:
-        Height: =99
+        Height: =115
         Image: ='My project-1 (14)'
-        Width: =131
-        X: =509
-        Y: =4
+        Width: =154
+        X: =486
         ZIndex: =19
+
+    Label4_1 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =30
+        Text: ="Returning Customer"
+        Width: =560
+        X: =40
+        Y: =742
+        ZIndex: =20
+
+    Label4_2 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =30
+        Text: ="Guest Checkout"
+        Width: =560
+        X: =40
+        Y: =899
+        ZIndex: =21
 

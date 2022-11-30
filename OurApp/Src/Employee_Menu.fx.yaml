@@ -27,7 +27,7 @@ Employee_Menu As screen:
 
     Label1_10 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(153, 60, 61, 1)
         Font: =Font.Georgia
         Height: =108
         Size: =35
@@ -73,7 +73,7 @@ Employee_Menu As screen:
     Image1_5 As image:
         Height: =125
         Image: ='My project-1 (14)'
-        Width: =156
+        Width: =176
         X: =241
         ZIndex: =8
 

@@ -2,7 +2,7 @@ Receipts As screen:
 
     Label1_12 As label:
         Align: =Align.Center
-        Fill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(153, 60, 61, 1)
         Font: =Font.Georgia
         Height: =108
         Size: =35
@@ -80,9 +80,11 @@ Receipts As screen:
 
     LblAppName3_1 As label:
         Align: =Align.Center
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Bold
         Height: =70
-        Size: =27
-        Text: ="Receipts"
+        Size: =35
+        Text: ="RECEIPTS"
         Width: =281
         Wrap: =false
         X: =179

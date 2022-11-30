@@ -1,15 +1,16 @@
 FirstScreen As screen:
-    Fill: =RGBA(167, 182, 203, 1)
+    Fill: =RGBA(139, 176, 143, 1)
 
     "'Customer page' As button":
         BorderColor: =ColorFade(Self.Fill, -100%)
         BorderThickness: =7
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: =Navigate('Customer Home Page') + Set(scan_mesg, true) + Set(arrow,true) 
         Size: =24
-        Text: ="Customer"
+        Text: ="CUSTOMER"
         Width: =280
         X: =180
         Y: =792
@@ -20,10 +21,11 @@ FirstScreen As screen:
         BorderThickness: =7
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: =Navigate(Employee_Menu)
         Size: =24
-        Text: ="Employee"
+        Text: ="EMPLOYEE"
         Width: =280
         X: =180
         Y: =921
