@@ -22,7 +22,7 @@ Cart As screen:
 
         Image9 As image:
             Height: =120
-            Image: =Image8
+            Image: =Image8_1
             OnSelect: =Select(Parent)
             Width: =123
             X: =14
