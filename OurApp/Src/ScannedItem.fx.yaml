@@ -278,13 +278,11 @@ ScannedItem As screen:
             Y: =16
             ZIndex: =10
 
-    BarcodeScanner1Duplicate As barcodeScanner:
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =128
+    BarcodeScanner2 As barcodeScanner:
+        Height: =120
         OnScan: |-
             =// check if scanned item was found
-             Set(SearchValue2, BarcodeScanner1Duplicate.Value);
+             Set(SearchValue2, BarcodeScanner2.Value);
              Set(BS1, false);
              Set(BS2, false);
              If(
@@ -297,8 +295,8 @@ ScannedItem As screen:
         Size: =24
         Text: ="Scan"
         Visible: =false
-        Width: =105
-        X: =270
-        Y: =1008
-        ZIndex: =26
+        Width: =107
+        X: =255
+        Y: =1012
+        ZIndex: =27
 
