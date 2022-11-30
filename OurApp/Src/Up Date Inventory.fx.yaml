@@ -1,5 +1,6 @@
 "'Up Date Inventory' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
     ContentLanguage: =""
+    Fill: =RGBA(237, 234, 232, 1)
     OnVisible: =
 
     RectQuickActionBar4 As rectangle:
