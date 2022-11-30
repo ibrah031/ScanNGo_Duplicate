@@ -1287,14 +1287,7 @@
         "ZIndex",
         "ShowScrollbar",
         "Visible",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "Default"
       ],
       "GalleryTemplateChildName": "galleryTemplate1_1",
       "HasDynamicProperties": false,

@@ -74,7 +74,6 @@ ScannedItem As screen:
         ZIndex: =14
 
     "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Default: ={}
         Height: =762
         Items: |
             =//SearchValue must be a string
@@ -117,11 +116,11 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =395
+            Y: =365
             ZIndex: =1
 
         Body1_1 As label:
-            Height: =89
+            Height: =122
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -133,7 +132,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =584
             X: =32
-            Y: =451
+            Y: =410
             ZIndex: =3
 
         Separator1_1 As rectangle:
@@ -205,8 +204,7 @@ ScannedItem As screen:
                 
             Visible: =true //_image
             Width: =355
-            X: =111
-            Y: =16
+            X: =122
             ZIndex: =10
 
     Group5_1 As group:
@@ -311,7 +309,7 @@ ScannedItem As screen:
             Color: =RGBA(237, 234, 232, 1)
             Height: =75
             Icon: =Icon.Camera
-            OnSelect: =Select(BarcodeScanner1_1) 
+            OnSelect: =Reset(BrowseGallery1_1) + Title1_1.Text = " " + Select(BarcodeScanner1_1) 
             Width: =98
             X: =266
             Y: =1020
