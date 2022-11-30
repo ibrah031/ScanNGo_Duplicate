@@ -242,16 +242,6 @@ ScannedItem As screen:
             X: =122
             ZIndex: =10
 
-    Label14 As label:
-        BorderThickness: =2
-        Height: =48
-        Size: =10
-        Text: =varIncrement
-        Width: =48
-        X: =559
-        Y: =1008
-        ZIndex: =25
-
     Group5_1 As group:
         Height: =5
         Width: =5
@@ -359,4 +349,17 @@ ScannedItem As screen:
             X: =266
             Y: =1020
             ZIndex: =24
+
+    TextInput4 As text:
+        Default: =varIncrement
+        Height: =30
+        RadiusBottomLeft: =65
+        RadiusBottomRight: =65
+        RadiusTopLeft: =65
+        RadiusTopRight: =65
+        Size: =12
+        Width: =45
+        X: =552
+        Y: =1020
+        ZIndex: =26
 
