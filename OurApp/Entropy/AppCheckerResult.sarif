@@ -2504,36 +2504,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Soy Candle"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Soy Candle",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Soy Candle",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Component1.varNumber"
                 }
               ],
