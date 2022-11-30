@@ -28,7 +28,7 @@ ScannedItem As screen:
         Icon: =Icon.Person
         X: =73
         Y: =1021
-        ZIndex: =5
+        ZIndex: =3
 
     Icon9_2 As icon.ShoppingCart:
         Color: =RGBA(237, 234, 232, 1)
@@ -36,7 +36,7 @@ ScannedItem As screen:
         OnSelect: =Navigate(Cart)
         X: =488
         Y: =1021
-        ZIndex: =6
+        ZIndex: =4
 
     Icon10_1 As icon.Camera:
         Color: =RGBA(237, 234, 232, 1)
@@ -47,7 +47,7 @@ ScannedItem As screen:
         Width: =98
         X: =260
         Y: =1015
-        ZIndex: =7
+        ZIndex: =5
 
     Label9_5 As label:
         Align: =Align.Center
@@ -60,7 +60,7 @@ ScannedItem As screen:
         Width: =91
         X: =60
         Y: =1090
-        ZIndex: =9
+        ZIndex: =6
 
     Label9_6 As label:
         Align: =Align.Center
@@ -73,7 +73,7 @@ ScannedItem As screen:
         Width: =77
         X: =270
         Y: =1085
-        ZIndex: =10
+        ZIndex: =7
 
     Label9_7 As label:
         Align: =Align.Center
@@ -86,7 +86,7 @@ ScannedItem As screen:
         Width: =63
         X: =490
         Y: =1087
-        ZIndex: =12
+        ZIndex: =8
 
     Icon11_1 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
@@ -95,7 +95,7 @@ ScannedItem As screen:
         Width: =52
         X: =42
         Y: =27
-        ZIndex: =13
+        ZIndex: =9
 
     Add_to_cart As button:
         Height: =45
@@ -109,7 +109,7 @@ ScannedItem As screen:
         Width: =247
         X: =24
         Y: =936
-        ZIndex: =19
+        ZIndex: =10
 
     Button3_1 As button:
         Height: =45
@@ -120,7 +120,7 @@ ScannedItem As screen:
         Width: =247
         X: =342
         Y: =936
-        ZIndex: =20
+        ZIndex: =11
 
     Icon7 As icon.Home:
         Color: =RGBA(0, 0, 0, 1)
@@ -129,7 +129,7 @@ ScannedItem As screen:
         OnSelect: =Navigate('Customer Home Page')
         X: =543
         Y: =16
-        ZIndex: =22
+        ZIndex: =12
 
     Label13 As label:
         Align: =Align.Center
@@ -139,7 +139,7 @@ ScannedItem As screen:
         Width: =100
         X: =525
         Y: =56
-        ZIndex: =23
+        ZIndex: =13
 
     Image1_1 As image:
         Height: =99
@@ -147,7 +147,7 @@ ScannedItem As screen:
         Width: =131
         X: =244
         Y: =9
-        ZIndex: =24
+        ZIndex: =14
 
     "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Height: =762
@@ -173,7 +173,7 @@ ScannedItem As screen:
         TemplateSize: =742
         Width: =Parent.Width
         Y: =164
-        ZIndex: =25
+        ZIndex: =15
 
         Title1_1 As label:
             Height: =Self.Size * 1.8
@@ -296,7 +296,7 @@ ScannedItem As screen:
         Text: ="Scan"
         Visible: =false
         Width: =107
-        X: =255
-        Y: =1012
-        ZIndex: =27
+        X: =259
+        Y: =780
+        ZIndex: =16
 
