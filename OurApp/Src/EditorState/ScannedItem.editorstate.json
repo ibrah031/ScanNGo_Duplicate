@@ -72,7 +72,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Add_to_cart",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -326,7 +326,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryBody.ID%",
       "Name": "Body1_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -565,7 +565,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Body1_2",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -804,7 +804,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Body1_3",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1029,7 +1029,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BrowseGallery1_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1238,7 +1238,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button3_1",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1445,7 +1445,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate1_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1502,7 +1502,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon10_1",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1997,7 +1997,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon8_2",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2164,7 +2164,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon9_2",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2493,7 +2493,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "Image8": {
+    "Image8_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2550,8 +2550,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Image8",
-      "ParentIndex": 5,
+      "Name": "Image8_1",
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3100,7 +3100,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_7",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3362,7 +3362,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label11_2",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3927,7 +3927,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_5",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4196,7 +4196,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_6",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4428,7 +4428,14 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        "Align",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Align",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "VerticalAlign",
         "X",
         "Y",
@@ -4465,7 +4472,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_7",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4784,7 +4791,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "Separator1_1",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4918,7 +4925,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Slider1_2",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5100,7 +5107,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "Title1_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

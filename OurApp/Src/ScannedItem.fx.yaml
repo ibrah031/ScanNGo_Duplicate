@@ -68,11 +68,12 @@ ScannedItem As screen:
         ZIndex: =10
 
     Label9_7 As label:
+        Align: =Align.Center
         Height: =32
         Size: =17
         Text: ="Cart"
         Width: =63
-        X: =490
+        X: =496
         Y: =1090
         ZIndex: =12
 
@@ -110,23 +111,6 @@ ScannedItem As screen:
         Y: =936
         ZIndex: =20
 
-    Image8 As image:
-        Height: =340
-        Image: |-
-            =/*If(
-                !IsBlank(Title1_1.Text),
-                LookUp(
-                    Data,
-                    ItemName = SearchValue
-                ).'Image [image]'
-            )*/
-            SampleImage
-        Visible: =true //_image
-        Width: =355
-        X: =132
-        Y: =182
-        ZIndex: =21
-
     Icon7 As icon.Home:
         Color: =RGBA(0, 0, 0, 1)
         Height: =52
@@ -155,16 +139,16 @@ ScannedItem As screen:
         ZIndex: =24
 
     "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Height: =365
+        Height: =762
         Items: |-
             =//SearchValue must be a string
             Search(Data, SearchValue , "ItemName")
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =346
+        TemplateSize: =742
         Width: =Parent.Width
-        Y: =561
+        Y: =164
         ZIndex: =25
 
         Title1_1 As label:
@@ -194,7 +178,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =543
             X: =32
-            Y: =91
+            Y: =471
             ZIndex: =3
 
         Separator1_1 As rectangle:
@@ -217,7 +201,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =543
             X: =32
-            Y: =134
+            Y: =514
             ZIndex: =6
 
         Body1_3 As label:
@@ -233,7 +217,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =543
             X: =32
-            Y: =177
+            Y: =557
             ZIndex: =7
 
         Label11_2 As label:
@@ -243,7 +227,7 @@ ScannedItem As screen:
                 ="SubTotal: $" & Slider1_2.Value * ThisItem.Price
             Width: =560
             X: =32
-            Y: =275
+            Y: =655
             ZIndex: =8
 
         Slider1_2 As slider:
@@ -252,6 +236,23 @@ ScannedItem As screen:
             Max: =20
             Width: =214
             X: =32
-            Y: =230
+            Y: =610
             ZIndex: =9
+
+        Image8_1 As image:
+            Height: =340
+            Image: |-
+                =/*If(
+                    !IsBlank(Title1_1.Text),
+                    LookUp(
+                        Data,
+                        ItemName = SearchValue
+                    ).'Image [image]'
+                )*/
+                ThisItem.ImageColumnName
+            Visible: =true //_image
+            Width: =355
+            X: =111
+            Y: =16
+            ZIndex: =10
 
