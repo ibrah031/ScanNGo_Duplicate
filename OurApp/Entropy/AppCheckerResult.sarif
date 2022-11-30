@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 39,
-                  "charOffset": 33,
+                  "charLength": 75,
+                  "charOffset": 32,
                   "snippet": {
-                    "text": "Search (Data, SearchValue , \"ItemName\")"
+                    "text": "If (BarcodeScanner1.Pressed = true,Search (Data, SearchValue , \"ItemName\"))"
                   }
                 }
               },
@@ -63,10 +63,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 39,
-                  "charOffset": 110,
+                  "charLength": 85,
+                  "charOffset": 144,
                   "snippet": {
-                    "text": "Search(Data, SearchValue2 , \"ItemName\")"
+                    "text": "If (BarcodeScanner1Duplicate.Pressed = true, Search(Data, SearchValue2 , \"ItemName\"))"
                   }
                 }
               },
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 73,
+                  "charOffset": 107,
                   "snippet": {
                     "text": "+"
                   }
@@ -3136,6 +3136,36 @@
                 "member": "Y",
                 "module": "Customer Home Page",
                 "type": "'Customer Home Page'.BrowseGallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScannedItem.BrowseGallery1_1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScannedItem.BrowseGallery1_1.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "ScannedItem",
+                "type": "ScannedItem.BrowseGallery1_1"
               }
             }
           ],
