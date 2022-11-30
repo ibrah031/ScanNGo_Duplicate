@@ -271,25 +271,3 @@
             Y: =383
             ZIndex: =25
 
-    BarcodeScanner1Duplicate As barcodeScanner:
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =128
-        OnScan: |-
-            =// check if scanned item was found
-             Set(SearchValue2, BarcodeScanner1.Value);
-             If(
-                SearchValue in Data.ItemName,
-                true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2), 
-                //Set(barVal, true) + 
-                //Set(browsegallery, true),
-                false +  Notify("ITEM NOT FOUND", NotificationType.Error)
-            )
-        Size: =24
-        Text: ="Scan"
-        Visible: =false
-        Width: =105
-        X: =283
-        Y: =1008
-        ZIndex: =27
-
