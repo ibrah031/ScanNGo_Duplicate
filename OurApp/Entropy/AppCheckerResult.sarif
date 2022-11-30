@@ -404,49 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Customer Home Page'.Icon10.AccessibleLabel"
+                  "fullyQualifiedName": "ScannedItem.Icon9_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Customer Home Page'.Icon10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Customer Home Page",
-                "type": "'Customer Home Page'.Icon10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Customer Home Page'.Icon10.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Customer Home Page'.Icon10.TabIndex",
+                  "fullyQualifiedName": "ScannedItem.Icon9_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Customer Home Page",
-                "type": "'Customer Home Page'.Icon10"
+                "module": "ScannedItem",
+                "type": "ScannedItem.Icon9_1"
               }
             }
           ],
@@ -458,6 +428,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScannedItem.Icon9_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScannedItem.Icon9_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ScannedItem",
+                "type": "ScannedItem.Icon9_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1334,49 +1334,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScannedItem.Icon10_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Customer Home Page'.Icon10.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScannedItem.Icon10_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ScannedItem",
-                "type": "ScannedItem.Icon10_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ScannedItem.Icon10_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ScannedItem.Icon10_1.TabIndex",
+                  "fullyQualifiedName": "'Customer Home Page'.Icon10.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "ScannedItem",
-                "type": "ScannedItem.Icon10_1"
+                "module": "Customer Home Page",
+                "type": "'Customer Home Page'.Icon10"
               }
             }
           ],
@@ -1394,19 +1364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScannedItem.Icon9_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Customer Home Page'.Icon10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScannedItem.Icon9_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Customer Home Page'.Icon10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ScannedItem",
-                "type": "ScannedItem.Icon9_2"
+                "module": "Customer Home Page",
+                "type": "'Customer Home Page'.Icon10"
               }
             }
           ],
@@ -1424,19 +1394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ScannedItem.Icon9_2.TabIndex"
+                  "fullyQualifiedName": "ScannedItem.Label9_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ScannedItem.Icon9_2.TabIndex",
+                  "fullyQualifiedName": "ScannedItem.Label9_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ScannedItem",
-                "type": "ScannedItem.Icon9_2"
+                "type": "ScannedItem.Label9_6"
               }
             }
           ],
@@ -1448,6 +1418,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ScannedItem.Label9_6.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ScannedItem.Label9_6.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "ScannedItem",
+                "type": "ScannedItem.Label9_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
