@@ -151,9 +151,11 @@
         OnScan: |-
             =// check if scanned item was found
              Set(SearchValue, BarcodeScanner1.Value);
+             Set(BS1, false);
+             Set(BS2, false);
              If(
                 SearchValue in Data.ItemName,
-                true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2), 
+                true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2) + Set(BS1, true), 
                 //Set(barVal, true) + 
                 //Set(browsegallery, true),
                 false +  Notify("ITEM NOT FOUND", NotificationType.Error)

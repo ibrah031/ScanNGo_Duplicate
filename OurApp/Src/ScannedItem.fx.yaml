@@ -154,13 +154,13 @@ ScannedItem As screen:
         Items: |-
             =//SearchValue must be a string
             If (
-                BarcodeScanner1.Pressed= true,
+                BS1 = true,
                 Search (
                     Data,
                     SearchValue,
                     "ItemName"
                 ),
-                BarcodeScanner1Duplicate.Pressed = true,
+                BS2 = true,
                 Search(
                     Data,
                     SearchValue2,
@@ -284,10 +284,12 @@ ScannedItem As screen:
         Height: =128
         OnScan: |-
             =// check if scanned item was found
-             Set(SearchValue2, BarcodeScanner1.Value);
+             Set(SearchValue2, BarcodeScanner1Duplicate.Value);
+             Set(BS1, false);
+             Set(BS2, false);
              If(
                 SearchValue2 in Data.ItemName,
-                true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2), 
+                true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2) + Set(BS2, true), 
                 //Set(barVal, true) + 
                 //Set(browsegallery, true),
                 false +  Notify("ITEM NOT FOUND", NotificationType.Error)
