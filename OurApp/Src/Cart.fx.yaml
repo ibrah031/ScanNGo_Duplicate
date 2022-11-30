@@ -47,11 +47,11 @@ Cart As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image9.Width - 104
             X: =159
-            Y: =43
+            Y: =13
             ZIndex: =2
 
         Subtitle10 As label:
-            Height: =39
+            Height: =95
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -59,9 +59,9 @@ Cart As screen:
             PaddingTop: =0
             Text: =ThisItem.ItemDescription
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title12.Width
+            Width: =401
             X: =159
-            Y: =79
+            Y: =49
             ZIndex: =3
 
         Body4 As label:
@@ -75,7 +75,7 @@ Cart As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Subtitle10.Width
             X: =159
-            Y: =115
+            Y: =144
             ZIndex: =4
 
         Separator12 As rectangle:
@@ -96,7 +96,7 @@ Cart As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Subtitle10.Width
             X: =159
-            Y: =144
+            Y: =170
             ZIndex: =7
 
         Body4_2 As label:
@@ -111,7 +111,7 @@ Cart As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Subtitle10.Width
             X: =159
-            Y: =187
+            Y: =213
             ZIndex: =8
 
         Icon14 As icon.Trash:
