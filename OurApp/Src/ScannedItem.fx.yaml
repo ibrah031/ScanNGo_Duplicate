@@ -173,7 +173,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =16
+            Y: =417
             ZIndex: =1
 
         Body1_1 As label:
@@ -252,15 +252,7 @@ ScannedItem As screen:
 
         Image8_1 As image:
             Height: =340
-            Image: |-
-                =/*If(
-                    !IsBlank(Title1_1.Text),
-                    LookUp(
-                        Data,
-                        ItemName = SearchValue
-                    ).'Image [image]'
-                )*/
-                ThisItem.ImageColumnName
+            Image: =If( Title1_1.Text = "Lavender Candle", 'Lavender Candle')
             Visible: =true //_image
             Width: =355
             X: =111
