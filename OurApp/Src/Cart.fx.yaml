@@ -1,5 +1,5 @@
 Cart As screen:
-    Fill: =RGBA(237, 234, 232, 1)
+    Fill: =RGBA(255, 255, 255, 1)
     OnVisible: =
 
     Label1_8 As label:
