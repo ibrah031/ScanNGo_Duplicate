@@ -154,7 +154,7 @@ ScannedItem As screen:
         Items: |-
             =//SearchValue must be a string
             If (
-                BarcodeScanner1.Pressed = true,
+                BarcodeScanner1.Pressed= true,
                 Search (
                     Data,
                     SearchValue,
