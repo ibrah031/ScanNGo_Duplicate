@@ -153,7 +153,10 @@ ScannedItem As screen:
         Height: =762
         Items: |-
             =//SearchValue must be a string
-            Search(Data, SearchValue , "ItemName")
+            (Search (Data, SearchValue , "ItemName"))+
+            
+            //SearchValue must be a string
+            Search(Data, SearchValue2 , "ItemName")
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -273,7 +276,7 @@ ScannedItem As screen:
             =// check if scanned item was found
              Set(SearchValue2, BarcodeScanner1.Value);
              If(
-                SearchValue in Data.ItemName,
+                SearchValue2 in Data.ItemName,
                 true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2), 
                 //Set(barVal, true) + 
                 //Set(browsegallery, true),
