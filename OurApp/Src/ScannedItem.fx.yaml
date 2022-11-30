@@ -23,10 +23,42 @@ ScannedItem As screen:
 
     Add_to_cart As button:
         Height: =45
-        OnSelect: |+
-            =Collect(collectMultiScan, {Title: SearchValue, ItemDescription: Body1_1, Price: Body1_2, Qty: Body1_3, SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)}); 
-            
-            
+        OnSelect: |-
+            =If(
+                BS1 = true,
+                Collect(
+                    collectMultiScan,
+                    {
+                        Title: SearchValue,
+                        ItemDescription: Body1_1,
+                        Price: Body1_2,
+                        Qty: Body1_3,
+                        SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                    }
+                ),
+                BS2 = true,
+                Collect(
+                    collectMultiScan,
+                    {
+                        Title: SearchValue2,
+                        ItemDescription: Body1_1,
+                        Price: Body1_2,
+                        Qty: Body1_3,
+                        SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                    }
+                ),
+                BS3 = true,
+                Collect(
+                    collectMultiScan,
+                    {
+                        Title: SearchValue3,
+                        ItemDescription: Body1_1,
+                        Price: Body1_2,
+                        Qty: Body1_3,
+                        SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                    }
+                )
+            )
         Size: =24
         Text: ="Add to cart"
         Visible: =true//_ATC
