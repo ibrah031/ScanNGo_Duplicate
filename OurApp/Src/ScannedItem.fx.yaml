@@ -291,7 +291,7 @@ ScannedItem As screen:
                  Set(BS2, false);
                  If(
                     SearchValue2 in Data.ItemName,
-                    true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2) + Set(BS1, true), 
+                    true + Navigate(ScannedItem) + Set(_image, true) + Set(_cancelB, true) + Set(_ATC, true) + Reset(Slider1_2) + Set(BS2, true), 
                     //Set(barVal, true) + 
                     //Set(browsegallery, true),
                     false +  Notify("ITEM NOT FOUND", NotificationType.Error)
