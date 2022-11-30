@@ -116,11 +116,11 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =417
+            Y: =395
             ZIndex: =1
 
         Body1_1 As label:
-            Height: =43
+            Height: =89
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -130,9 +130,9 @@ ScannedItem As screen:
             Text: |-
                 = "ItemDescription: " & ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
-            Width: =543
+            Width: =584
             X: =32
-            Y: =471
+            Y: =451
             ZIndex: =3
 
         Separator1_1 As rectangle:
@@ -155,7 +155,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =543
             X: =32
-            Y: =514
+            Y: =532
             ZIndex: =6
 
         Body1_3 As label:
@@ -171,7 +171,7 @@ ScannedItem As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =543
             X: =32
-            Y: =557
+            Y: =575
             ZIndex: =7
 
         Label11_2 As label:
