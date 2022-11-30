@@ -27,12 +27,12 @@
             Text: =ThisItem.ItemName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
-            X: =32
+            X: =17
             Y: =16
             ZIndex: =1
 
         Subtitle1 As label:
-            Height: =Self.Size * 1.8
+            Height: =71
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -40,13 +40,13 @@
             PaddingTop: =0
             Text: =ThisItem.Description
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =Title1.Y + Title1.Height + 2
+            Width: =561
+            X: =55
+            Y: =52
             ZIndex: =2
 
         Body1 As label:
-            Height: =Self.Size * 4
+            Height: =44
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -56,8 +56,8 @@
                 ="Quantity: " & ThisItem.Quantity & "     SKU# " & ThisItem.SKU & "     Price: " & ThisItem.Price & "     Wholesale: " & ThisItem.WholesalePrice
             VerticalAlign: =VerticalAlign.Top
             Width: =543
-            X: =32
-            Y: =Subtitle1.Y + Subtitle1.Height + 4
+            X: =55
+            Y: =123
             ZIndex: =3
 
         Separator1 As rectangle:
