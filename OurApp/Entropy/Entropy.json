@@ -14,6 +14,7 @@
     "Arrow2": 238,
     "Arrow2_2": 194,
     "BarcodeScanner1": 61,
+    "BarcodeScanner1_1": 283,
     "BarcodeScanner2": 282,
     "Body1": 202,
     "Body1_1": 144,
@@ -289,7 +290,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/30/2022 21:55:35",
+  "HeaderLastSavedDateTimeUTC": "11/30/2022 22:00:28",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3ede3aa5-3814-40cd-91e0-d6f3385e0167": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/cfdb8c58d0fd45de8749330830243567\""
@@ -385,6 +386,7 @@
     "Arrow2": 102,
     "Arrow2_2": 143,
     "BarcodeScanner1": 39,
+    "BarcodeScanner1_1": 39,
     "BarcodeScanner2": 0,
     "Body1": 151,
     "Body1_1": 55,
@@ -680,7 +682,7 @@
       "635d60e0764844e08f1338d39e15274b": 1,
       "arrow": 2,
       "b08eb26c328d40a0a728be4ebe8757be": 1,
-      "barcodeScanner": 2,
+      "barcodeScanner": 3,
       "button": 24,
       "dropdown": 1,
       "eed054cea8194bf09981049dfe793d4c": 1,
