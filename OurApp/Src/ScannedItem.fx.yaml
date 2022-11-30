@@ -296,7 +296,7 @@ ScannedItem As screen:
         Text: ="Scan"
         Visible: =false
         Width: =105
-        X: =303
+        X: =270
         Y: =1008
         ZIndex: =26
 
