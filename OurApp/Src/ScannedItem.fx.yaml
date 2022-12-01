@@ -23,7 +23,7 @@ ScannedItem As screen:
 
     Add_to_cart As button:
         Height: =45
-        OnSelect: |-
+        OnSelect: |+
             =If(
                 BS1 = true,
                 Collect(
@@ -62,6 +62,10 @@ ScannedItem As screen:
             Notify("ITEM WAS ADDED TO CART!",Information,5000);
             
             Set(varIncrement, varIncrement + 1);
+            Set(qtyNum, Body1_3);
+            Set(DataQty, Data.Quantity);
+            Set(DataQty, (DataQty - qtyNum));
+            
         Size: =24
         Text: ="Add to cart"
         Visible: =true//_ATC

@@ -225,7 +225,7 @@ Cart As screen:
 
         Button6_1 As button:
             Height: =60
-            OnSelect: =Button5.DisplayMode.Disabled + Set(_purchase, false)
+            OnSelect: =Button5.DisplayMode.Disabled + Set(_purchase, false) 
             Size: =16
             Text: ="DONE"
             Visible: =_purchase
