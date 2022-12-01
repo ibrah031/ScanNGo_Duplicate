@@ -198,7 +198,7 @@
         Height: =52
         Size: =20
         Width: =57
-        X: =137
+        X: =121
         Y: =1080
         ZIndex: =28
 
@@ -223,6 +223,8 @@
         Icon8 As icon.Person:
             Color: =RGBA(237, 234, 232, 1)
             Icon: =Icon.Person
+            Tooltip: |-
+                ="Your guest ID #"
             X: =73
             Y: =1031
             ZIndex: =5
@@ -236,7 +238,6 @@
             ZIndex: =6
 
         Label9_1 As label:
-            Align: =Align.Center
             Color: =RGBA(237, 234, 232, 1)
             Font: =Font.'Open Sans Condensed'
             FontWeight: =FontWeight.Semibold
