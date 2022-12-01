@@ -8,7 +8,7 @@ FirstScreen As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.'Open Sans Condensed'
         Height: =70
-        OnSelect: =Navigate('Customer Home Page') + Set(scan_mesg, true) + Set(arrow,true) + Set(varIncrement, 0) + Set(guestNum, 0) + Set(guestNum, guestNum + 1);
+        OnSelect: =Navigate('Customer Home Page') + Set(scan_mesg, true) + Set(arrow,true) + Set(varIncrement, 0) + Set(guestNum, 1) + Set(guestNum, updateGNum + 1);
         Size: =24
         Text: ="CUSTOMER"
         Width: =280
