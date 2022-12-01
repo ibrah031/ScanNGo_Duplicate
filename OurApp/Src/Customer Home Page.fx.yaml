@@ -188,6 +188,20 @@
             Y: =383
             ZIndex: =25
 
+    TextInput5 As text:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(230, 230, 230, 1)
+        Default: =guestNum 
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        Height: =52
+        Size: =20
+        Width: =57
+        X: =137
+        Y: =1080
+        ZIndex: =28
+
     Group5 As group:
         Height: =5
         Width: =5

@@ -63,8 +63,8 @@ ScannedItem As screen:
             
             Set(varIncrement, varIncrement + 1);
             Set(qtyNum, Body1_3);
-            Set(DataQty, Data.Quantity);
-            Set(DataQty, (DataQty - qtyNum));
+            //Set(DataQty, Data.Quantity);
+            //Set(DataQty, (DataQty - qtyNum));
             
         Size: =24
         Text: ="Add to cart"
