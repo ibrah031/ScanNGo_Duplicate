@@ -361,3 +361,13 @@
                 Y: =DataCardKey40.Y
                 ZIndex: =4
 
+    Button10 As button:
+        Height: =70
+        OnSelect: =Remove
+        Size: =24
+        Text: ="Delete Item"
+        Width: =280
+        X: =179
+        Y: =1008
+        ZIndex: =7
+
