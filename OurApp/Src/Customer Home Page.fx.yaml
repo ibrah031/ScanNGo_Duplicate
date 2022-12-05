@@ -51,10 +51,16 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
-        NextArrow3 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Icon16 As icon.Add:
+            Height: =50
+            Icon: =Icon.Add
             OnSelect: |-
                 =If(
                     BS1 = true,
@@ -95,23 +101,10 @@
                 
                 Set(varIncrement, varIncrement + 1);
                 Set(qtyNum, Body1_3);
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =3
-
-        Separator3 As rectangle:
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
+            Width: =61
+            X: =554
+            Y: =32
+            ZIndex: =5
 
     Icon11 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
