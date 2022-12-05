@@ -44,7 +44,7 @@
 
     Button12 As button:
         Height: =70
-        OnSelect: =Remove(Data, Filter(Data, SKU = DataCardValue2))
+        OnSelect: =Remove(Data, Filter(Data, SKU = Dropdown1))
         Size: =24
         Text: ="Delete Item"
         Width: =280
@@ -219,4 +219,14 @@
         X: =32
         Y: =224
         ZIndex: =11
+
+    Label17 As label:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =70
+        Size: =50
+        Text: ="DOES NOT WORK"
+        Width: =560
+        X: =32
+        Y: =817
+        ZIndex: =12
 
