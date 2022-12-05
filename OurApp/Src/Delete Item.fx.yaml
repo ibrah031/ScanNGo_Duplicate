@@ -42,22 +42,23 @@
         Y: =120
         ZIndex: =5
 
-    Dropdown1 As dropdown:
+    Button12 As button:
         Height: =70
-        Items: =Data
-        Size: =21
-        Width: =575
-        X: =32
-        Y: =209
-        ZIndex: =6
+        OnSelect: =Remove(Data, Filter(Data, SKU = Value(Dropdown1.Selected)))
+        Size: =24
+        Text: ="Delete Item"
+        Width: =280
+        X: =180
+        Y: =1035
+        ZIndex: =8
 
     FormViewer1 As formViewer:
         DataSource: =Data
-        Height: =741
+        Height: =639
         Item: =Dropdown1.Selected
         Width: =640
-        Y: =312
-        ZIndex: =7
+        Y: =328
+        ZIndex: =10
 
         ItemName_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -97,15 +98,15 @@
                 Y: =DataCardKey1.Y + DataCardKey1.Height + 5
                 ZIndex: =2
 
-        Description_DataCard1 As typedDataCard.textualViewCard:
+        SKU_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Description"
-            Default: =ThisItem.Description
+            DataField: ="SKU"
+            Default: =ThisItem.SKU
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Description")
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"SKU")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
-            Required: =false
+            Required: =true
             Width: =640
             X: =0
             Y: =1
@@ -135,12 +136,12 @@
                 Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
-        "'Image[image]_DataCard1' As typedDataCard.textualViewCard":
+        Description_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Image[image]"
-            Default: =ThisItem.'Image[image]'
+            DataField: ="Description"
+            Default: =ThisItem.Description
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Image[image]")
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -156,8 +157,7 @@
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =36
                 ZIndex: =1
 
             DataCardValue3 As label:
@@ -173,12 +173,12 @@
                 Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                 ZIndex: =2
 
-        Quantity_DataCard1 As typedDataCard.textualViewCard:
+        Price_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Quantity"
-            Default: =ThisItem.Quantity
+            DataField: ="Price"
+            Default: =ThisItem.Price
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Quantity")
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Price")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -211,13 +211,12 @@
                 Y: =DataCardKey4.Y + DataCardKey4.Height + 5
                 ZIndex: =2
 
-    Button12 As button:
+    Dropdown1 As dropdown:
         Height: =70
-        OnSelect: =Remove(Data, Filter(Data, DataCardValue1=DataCardValue1))
-        Size: =24
-        Text: ="Delete Item"
-        Width: =280
-        X: =180
-        Y: =1035
-        ZIndex: =8
+        Items: =Data
+        Size: =21
+        Width: =575
+        X: =32
+        Y: =224
+        ZIndex: =11
 
