@@ -12,16 +12,6 @@ ScannedItem As screen:
         Width: =640
         ZIndex: =1
 
-    Icon11_1 As icon.Search:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =53
-        Icon: =Icon.Search
-        OnSelect: =Navigate('Customer Home Page')
-        Width: =52
-        X: =42
-        Y: =27
-        ZIndex: =9
-
     Add_to_cart As button:
         Height: =45
         OnSelect: |+

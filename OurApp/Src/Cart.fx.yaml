@@ -122,15 +122,6 @@ Cart As screen:
             Y: =94
             ZIndex: =9
 
-    Icon11_2 As icon.Search:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =53
-        Icon: =Icon.Search
-        Width: =52
-        X: =42
-        Y: =27
-        ZIndex: =13
-
     Icon7_1 As icon.Home:
         Color: =RGBA(0, 0, 0, 1)
         Height: =52

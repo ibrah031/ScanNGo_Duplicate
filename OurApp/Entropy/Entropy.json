@@ -136,8 +136,6 @@
     "Icon10_1": 45,
     "Icon10_2": 205,
     "Icon11": 119,
-    "Icon11_1": 29,
-    "Icon11_2": 185,
     "Icon12": 180,
     "Icon13": 281,
     "Icon14": 193,
@@ -320,7 +318,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/05/2022 23:35:15",
+  "HeaderLastSavedDateTimeUTC": "12/05/2022 23:38:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3ede3aa5-3814-40cd-91e0-d6f3385e0167": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/81e767831539434ba91d9ecba32284a8\""
@@ -569,8 +567,6 @@
     "Icon10_1": 70,
     "Icon10_2": 102,
     "Icon11": 23,
-    "Icon11_1": 53,
-    "Icon11_2": 80,
     "Icon12": 249,
     "Icon13": 162,
     "Icon14": 88,
