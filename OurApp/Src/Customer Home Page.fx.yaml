@@ -55,7 +55,46 @@
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =If(
+                    BS1 = true,
+                    Collect(
+                        collectMultiScan,
+                        {
+                            Title: SearchValue,
+                            ItemDescription: Body1_1,
+                            Price: Body1_2,
+                            Qty: Body1_3,
+                            SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                        }
+                    ),
+                    BS2 = true,
+                    Collect(
+                        collectMultiScan,
+                        {
+                            Title: SearchValue2,
+                            ItemDescription: Body1_1,
+                            Price: Body1_2,
+                            Qty: Body1_3,
+                            SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                        }
+                    ),
+                    BS3 = true,
+                    Collect(
+                        collectMultiScan,
+                        {
+                            Title: SearchValue3,
+                            ItemDescription: Body1_1,
+                            Price: Body1_2,
+                            Qty: Body1_3,
+                            SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                        }
+                    )
+                );
+                Notify("ITEM WAS ADDED TO CART!",Information,5000);
+                
+                Set(varIncrement, varIncrement + 1);
+                Set(qtyNum, Body1_3);
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -311,4 +350,17 @@
             X: =266
             Y: =1020
             ZIndex: =27
+
+    TextInput4_1 As text:
+        Default: =varIncrement
+        Height: =30
+        RadiusBottomLeft: =65
+        RadiusBottomRight: =65
+        RadiusTopLeft: =65
+        RadiusTopRight: =65
+        Size: =12
+        Width: =45
+        X: =560
+        Y: =1020
+        ZIndex: =29
 
