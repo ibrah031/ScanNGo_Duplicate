@@ -44,12 +44,12 @@
 
     Button12 As button:
         Height: =70
-        OnSelect: =Remove(Data, Filter(Data, SKU = Value(Dropdown1.Selected)))
+        OnSelect: =Remove(Data, Filter(Data, SKU = DataCardValue2))
         Size: =24
         Text: ="Delete Item"
         Width: =280
-        X: =180
-        Y: =1035
+        X: =173
+        Y: =1010
         ZIndex: =8
 
     FormViewer1 As formViewer:
