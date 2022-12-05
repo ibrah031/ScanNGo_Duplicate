@@ -8,7 +8,7 @@
         ZIndex: =1
 
     "BrowseGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Height: =Parent.Height - BrowseGallery1.Y
+        Height: =840
         Items: =SortByColumns(Search(Data, TextSearchBox1.Text,"ItemName"), "ItemName",If(SortDescending1, Descending, Ascending))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
@@ -107,7 +107,7 @@
         TabIndex: =0
         Tooltip: =If(SortDescending1, "Sort list in reverse alphabetical order", "Sort list in alphabetical order")
         Width: =88
-        X: =497
+        X: =487
         Y: =3
         ZIndex: =4
 
@@ -186,4 +186,11 @@
         X: =457
         Y: =17
         ZIndex: =10
+
+    Icon13 As icon.Cut:
+        Icon: =Icon.Cut
+        OnSelect: =Navigate('Delete Item')
+        X: =278
+        Y: =1034
+        ZIndex: =11
 
