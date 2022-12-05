@@ -211,3 +211,13 @@
                 Y: =DataCardKey4.Y + DataCardKey4.Height + 5
                 ZIndex: =2
 
+    Button12 As button:
+        Height: =70
+        OnSelect: =Remove(Data, Filter(Data, DataCardValue1=DataCardValue1))
+        Size: =24
+        Text: ="Delete Item"
+        Width: =280
+        X: =180
+        Y: =1035
+        ZIndex: =8
+
