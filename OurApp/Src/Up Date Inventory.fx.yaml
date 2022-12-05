@@ -27,7 +27,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Check
-        OnSelect: =SubmitForm(Form6) & Navigate(Inventory)
+        OnSelect: =Navigate(Inventory)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
@@ -360,4 +360,14 @@
                 Wrap: =false
                 Y: =DataCardKey40.Y
                 ZIndex: =4
+
+    Button10 As button:
+        Height: =70
+        OnSelect: =Remove(Data, Filter(Data, DataCardValue44 = DataCardValue44))
+        Size: =24
+        Text: ="Delete Item"
+        Width: =280
+        X: =179
+        Y: =1011
+        ZIndex: =7
 
