@@ -44,7 +44,7 @@
 
     Button12 As button:
         Height: =70
-        OnSelect: =Remove(Data, Filter(Data, SKU = Dropdown1))
+        OnSelect: =Remove(Data, Filter(Data, Quantity ="99"))
         Size: =24
         Text: ="Delete Item"
         Width: =280
@@ -136,6 +136,44 @@
                 Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
+        Quantity_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Quantity"
+            Default: =ThisItem.Quantity
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Data],DataSourceInfo.DisplayName,"Quantity")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
         Description_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Description"
@@ -147,7 +185,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =1
 
             DataCardKey3 As label:
@@ -184,7 +222,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =3
+            Y: =4
             ZIndex: =1
 
             DataCardKey4 As label:
@@ -223,10 +261,10 @@
     Label17 As label:
         Color: =RGBA(255, 0, 0, 1)
         Height: =70
-        Size: =50
-        Text: ="DOES NOT WORK"
+        Size: =24
+        Text: ="to delete item, first set its Quantity to -99"
         Width: =560
         X: =32
-        Y: =817
+        Y: =886
         ZIndex: =12
 

@@ -1,5 +1,6 @@
 "Inventory As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
     OnHidden: =
+    OnVisible: =
 
     RectQuickActionBar1 As rectangle:
         Fill: =RGBA(153, 60, 61, 1)
