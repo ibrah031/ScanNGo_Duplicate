@@ -13,6 +13,8 @@ ScannedItem As screen:
         ZIndex: =1
 
     Add_to_cart As button:
+        Color: =RGBA(0, 18, 107, 1)
+        Fill: =RGBA(215, 223, 240, 1)
         Height: =45
         OnSelect: |+
             =If(
@@ -66,6 +68,8 @@ ScannedItem As screen:
         ZIndex: =10
 
     Button3_1 As button:
+        Color: =RGBA(0, 18, 107, 1)
+        Fill: =RGBA(215, 223, 240, 1)
         Height: =45
         OnSelect: =Navigate('Customer Home Page')
         Size: =24
@@ -237,6 +241,33 @@ ScannedItem As screen:
             X: =122
             ZIndex: =10
 
+    TextInput4_4 As text:
+        Align: =Align.Justify
+        BorderColor: =RGBA(241, 244, 249, 1)
+        Color: =RGBA(0, 18, 107, 1)
+        Default: |+
+            =varIncrement
+            
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(204, 231, 246, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        HintText: =""
+        PaddingBottom: =10
+        PaddingLeft: =10.5
+        PaddingRight: =10.5
+        PaddingTop: =10
+        RadiusBottomLeft: =67
+        RadiusBottomRight: =67
+        RadiusTopLeft: =67
+        RadiusTopRight: =67
+        Size: =10
+        Tooltip: ="Number of Items in cart"
+        Width: =29
+        X: =562
+        Y: =1019
+        ZIndex: =37
+
     Group5 As group:
         Height: =5
         Width: =5
@@ -375,24 +406,4 @@ ScannedItem As screen:
             X: =101
             Y: =1080
             ZIndex: =35
-
-        TextInput4_2 As text:
-            BorderColor: =RGBA(241, 244, 249, 1)
-            Color: =RGBA(241, 244, 249, 1)
-            Default: |
-                =varIncrement
-            DisplayMode: =DisplayMode.View
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =30
-            HintText: =""
-            RadiusBottomLeft: =67
-            RadiusBottomRight: =67
-            RadiusTopLeft: =67
-            RadiusTopRight: =67
-            Size: =17
-            Tooltip: ="Number of Items in cart"
-            Width: =33
-            X: =549
-            Y: =1092
-            ZIndex: =36
 

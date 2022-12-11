@@ -371,17 +371,16 @@ Cart As screen:
             BorderColor: =RGBA(241, 244, 249, 1)
             Color: =RGBA(0, 18, 107, 1)
             Default: |
-                =//varIncrement
-                0
+                =varIncrement
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(204, 231, 246, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
             HintText: =""
-            PaddingBottom: =3
-            PaddingLeft: =9.5
-            PaddingRight: =12
-            PaddingTop: =3
+            PaddingBottom: =10
+            PaddingLeft: =10.5
+            PaddingRight: =10.5
+            PaddingTop: =10
             RadiusBottomLeft: =67
             RadiusBottomRight: =67
             RadiusTopLeft: =67
@@ -390,6 +389,6 @@ Cart As screen:
             Tooltip: ="Number of Items in cart"
             Width: =29
             X: =562
-            Y: =1020
+            Y: =1019
             ZIndex: =50
 

@@ -123,16 +123,16 @@
         Text: ="Click the Scan icon to start shopping!"
         Visible: =scan_mesg = true
         Width: =605
-        X: =35
-        Y: =861
+        X: =15
+        Y: =573
         ZIndex: =18
 
     Icon2 As icon.ArrowDown:
-        Height: =349
+        Height: =206
         Visible: =arrow = true
         Width: =118
         X: =258
-        Y: =659
+        Y: =801
         ZIndex: =19
 
     Icon6 As icon.Leave:
@@ -219,6 +219,33 @@
             X: =324
             Y: =383
             ZIndex: =25
+
+    TextInput4_5 As text:
+        Align: =Align.Justify
+        BorderColor: =RGBA(241, 244, 249, 1)
+        Color: =RGBA(0, 18, 107, 1)
+        Default: |+
+            =varIncrement
+            
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(204, 231, 246, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        HintText: =""
+        PaddingBottom: =10
+        PaddingLeft: =10.5
+        PaddingRight: =10.5
+        PaddingTop: =10
+        RadiusBottomLeft: =67
+        RadiusBottomRight: =67
+        RadiusTopLeft: =67
+        RadiusTopRight: =67
+        Size: =10
+        Tooltip: ="Number of Items in cart"
+        Width: =29
+        X: =562
+        Y: =1019
+        ZIndex: =30
 
     Group4 As group:
         Height: =5
@@ -349,24 +376,4 @@
             X: =101
             Y: =1080
             ZIndex: =28
-
-        TextInput4_1 As text:
-            BorderColor: =RGBA(241, 244, 249, 1)
-            Color: =RGBA(241, 244, 249, 1)
-            Default: |
-                =varIncrement
-            DisplayMode: =DisplayMode.View
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =30
-            HintText: =""
-            RadiusBottomLeft: =67
-            RadiusBottomRight: =67
-            RadiusTopLeft: =67
-            RadiusTopRight: =67
-            Size: =17
-            Tooltip: ="Number of Items in cart"
-            Width: =33
-            X: =549
-            Y: =1092
-            ZIndex: =29
 
