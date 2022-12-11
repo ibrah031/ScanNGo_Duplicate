@@ -221,16 +221,22 @@
             ZIndex: =25
 
     TextInput5 As text:
+        Align: =Align.Center
         BorderStyle: =BorderStyle.None
         Color: =RGBA(230, 230, 230, 1)
-        Default: =guestNum 
+        Default: |-
+            =//guestNum 
+            1
+        DisplayMode: =DisplayMode.View
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Open Sans Condensed'
         FontWeight: =FontWeight.Semibold
         Height: =52
-        Size: =20
+        Size: =18
+        Tooltip: |-
+            ="This is your guest #"
         Width: =57
-        X: =121
+        X: =101
         Y: =1080
         ZIndex: =28
 
@@ -345,18 +351,23 @@
             ZIndex: =27
 
     TextInput4_1 As text:
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        Default: =varIncrement
+        BorderColor: =RGBA(241, 244, 249, 1)
+        BorderThickness: =1
+        Color: =RGBA(241, 244, 249, 1)
+        Default: |-
+            =varIncrement
+            //0
+        DisplayMode: =DisplayMode.View
         Fill: =RGBA(0, 0, 0, 0)
         Height: =30
-        RadiusBottomLeft: =65
-        RadiusBottomRight: =65
-        RadiusTopLeft: =65
-        RadiusTopRight: =65
-        Size: =12
-        Width: =45
-        X: =548
-        Y: =1020
+        HintText: =""
+        RadiusBottomLeft: =180
+        RadiusBottomRight: =180
+        RadiusTopLeft: =180
+        RadiusTopRight: =180
+        Tooltip: ="Number of Items in cart"
+        Width: =33
+        X: =571
+        Y: =1092
         ZIndex: =29
 
