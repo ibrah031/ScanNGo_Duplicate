@@ -371,8 +371,7 @@ Cart As screen:
             BorderColor: =RGBA(241, 244, 249, 1)
             Color: =RGBA(0, 18, 107, 1)
             Default: |
-                =//varIncrement
-                0
+                =varIncrement
             DisplayMode: =DisplayMode.View
             Fill: =RGBA(204, 231, 246, 1)
             Height: =27
