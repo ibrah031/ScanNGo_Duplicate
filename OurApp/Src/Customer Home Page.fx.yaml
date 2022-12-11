@@ -225,8 +225,8 @@
         BorderStyle: =BorderStyle.None
         Color: =RGBA(230, 230, 230, 1)
         Default: |-
-            =//guestNum 
-            1
+            =guestNum 
+            //1
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Open Sans Condensed'
