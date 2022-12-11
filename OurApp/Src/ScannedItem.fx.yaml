@@ -237,78 +237,12 @@ ScannedItem As screen:
             X: =122
             ZIndex: =10
 
-    Group5_1 As group:
+    Group5 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =25
-
-        Label1_5 As label:
-            Align: =Align.Center
-            Fill: =RGBA(139, 176, 143, 1)
-            Font: =Font.Georgia
-            Height: =128
-            Size: =35
-            Text: =""
-            Width: =640
-            Y: =1008
-            ZIndex: =17
-
-        Icon8_1 As icon.Person:
-            Color: =RGBA(237, 234, 232, 1)
-            Icon: =Icon.Person
-            X: =73
-            Y: =1031
-            ZIndex: =18
-
-        Icon9_1 As icon.ShoppingCart:
-            Color: =RGBA(237, 234, 232, 1)
-            Icon: =Icon.ShoppingCart
-            OnSelect: =Navigate(Cart)
-            X: =498
-            Y: =1026
-            ZIndex: =19
-
-        Label9_3 As label:
-            Align: =Align.Center
-            Color: =RGBA(237, 234, 232, 1)
-            Font: =Font.'Open Sans Condensed'
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            Size: =20
-            Text: ="Guest"
-            Width: =96
-            X: =57
-            Y: =1090
-            ZIndex: =20
-
-        Label9_5 As label:
-            Align: =Align.Center
-            Color: =RGBA(237, 234, 232, 1)
-            Font: =Font.'Open Sans Condensed'
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            Size: =25
-            Text: ="Scan"
-            Width: =77
-            X: =277
-            Y: =1090
-            ZIndex: =21
-
-        Label9_6 As label:
-            Align: =Align.Center
-            Color: =RGBA(237, 234, 232, 1)
-            Font: =Font.'Open Sans Condensed'
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            OnSelect: =Navigate(Cart)
-            Size: =20
-            Text: ="Cart"
-            Width: =63
-            X: =499
-            Y: =1090
-            ZIndex: =22
+        ZIndex: =37
 
         BarcodeScanner1_1 As barcodeScanner:
             Color: =RGBA(0, 0, 0, 1)
@@ -345,16 +279,120 @@ ScannedItem As screen:
             Y: =1020
             ZIndex: =24
 
-    TextInput4 As text:
-        Default: =varIncrement
-        Height: =30
-        RadiusBottomLeft: =65
-        RadiusBottomRight: =65
-        RadiusTopLeft: =65
-        RadiusTopRight: =65
-        Size: =12
-        Width: =45
-        X: =552
-        Y: =1020
-        ZIndex: =26
+        Label1_9 As label:
+            Align: =Align.Center
+            Fill: =RGBA(139, 176, 143, 1)
+            Font: =Font.Georgia
+            Height: =128
+            Size: =35
+            Text: =""
+            Width: =640
+            Y: =1008
+            ZIndex: =27
+
+        Icon8_3 As icon.Person:
+            Color: =RGBA(237, 234, 232, 1)
+            Icon: =Icon.Person
+            Tooltip: |-
+                ="Your guest ID #"
+            X: =73
+            Y: =1031
+            ZIndex: =28
+
+        Icon9_3 As icon.ShoppingCart:
+            Color: =RGBA(237, 234, 232, 1)
+            Icon: =Icon.ShoppingCart
+            OnSelect: =Navigate(Cart)
+            X: =498
+            Y: =1026
+            ZIndex: =29
+
+        Label9_10 As label:
+            Color: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            Size: =20
+            Text: ="Guest"
+            Width: =96
+            X: =57
+            Y: =1090
+            ZIndex: =30
+
+        Label9_11 As label:
+            Align: =Align.Center
+            Color: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            Size: =25
+            Text: ="Scan"
+            Width: =77
+            X: =277
+            Y: =1090
+            ZIndex: =31
+
+        Label9_12 As label:
+            Align: =Align.Center
+            Color: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            OnSelect: =Navigate(Cart)
+            Size: =20
+            Text: ="Cart"
+            Width: =63
+            X: =499
+            Y: =1090
+            ZIndex: =32
+
+        Icon10_3 As icon.Camera:
+            Color: =RGBA(237, 234, 232, 1)
+            Height: =75
+            Icon: =Icon.Camera
+            OnSelect: =Reset(BrowseGallery1_1) + Select(BarcodeScanner1_1)
+            Width: =98
+            X: =266
+            Y: =1020
+            ZIndex: =34
+
+        TextInput5_1 As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(230, 230, 230, 1)
+            Default: |-
+                =guestNum 
+                //1
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =52
+            Size: =18
+            Tooltip: |-
+                ="This is your guest #"
+            Width: =57
+            X: =101
+            Y: =1080
+            ZIndex: =35
+
+        TextInput4_2 As text:
+            BorderColor: =RGBA(241, 244, 249, 1)
+            Color: =RGBA(241, 244, 249, 1)
+            Default: |
+                =varIncrement
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =30
+            HintText: =""
+            RadiusBottomLeft: =67
+            RadiusBottomRight: =67
+            RadiusTopLeft: =67
+            RadiusTopRight: =67
+            Size: =17
+            Tooltip: ="Number of Items in cart"
+            Width: =33
+            X: =549
+            Y: =1092
+            ZIndex: =36
 

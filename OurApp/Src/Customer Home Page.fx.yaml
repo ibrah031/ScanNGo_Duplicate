@@ -220,32 +220,12 @@
             Y: =383
             ZIndex: =25
 
-    TextInput5 As text:
-        Align: =Align.Center
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(230, 230, 230, 1)
-        Default: |-
-            =guestNum 
-            //1
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(0, 0, 0, 0)
-        Font: =Font.'Open Sans Condensed'
-        FontWeight: =FontWeight.Semibold
-        Height: =52
-        Size: =18
-        Tooltip: |-
-            ="This is your guest #"
-        Width: =57
-        X: =101
-        Y: =1080
-        ZIndex: =28
-
-    Group5 As group:
+    Group4 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =28
+        ZIndex: =30
 
         Label1_3 As label:
             Align: =Align.Center
@@ -350,24 +330,43 @@
             Y: =1020
             ZIndex: =27
 
-    TextInput4_1 As text:
-        BorderColor: =RGBA(241, 244, 249, 1)
-        BorderThickness: =1
-        Color: =RGBA(241, 244, 249, 1)
-        Default: |-
-            =varIncrement
-            //0
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =30
-        HintText: =""
-        RadiusBottomLeft: =180
-        RadiusBottomRight: =180
-        RadiusTopLeft: =180
-        RadiusTopRight: =180
-        Tooltip: ="Number of Items in cart"
-        Width: =33
-        X: =571
-        Y: =1092
-        ZIndex: =29
+        TextInput5 As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(230, 230, 230, 1)
+            Default: |-
+                =guestNum 
+                //1
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
+            Height: =52
+            Size: =18
+            Tooltip: |-
+                ="This is your guest #"
+            Width: =57
+            X: =101
+            Y: =1080
+            ZIndex: =28
+
+        TextInput4_1 As text:
+            BorderColor: =RGBA(241, 244, 249, 1)
+            Color: =RGBA(241, 244, 249, 1)
+            Default: |
+                =varIncrement
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =30
+            HintText: =""
+            RadiusBottomLeft: =67
+            RadiusBottomRight: =67
+            RadiusTopLeft: =67
+            RadiusTopRight: =67
+            Size: =17
+            Tooltip: ="Number of Items in cart"
+            Width: =33
+            X: =549
+            Y: =1092
+            ZIndex: =29
 

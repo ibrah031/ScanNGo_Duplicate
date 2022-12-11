@@ -1164,7 +1164,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group5": {
+    "Group4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -1182,7 +1182,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group5",
+      "Name": "Group4",
       "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5641,7 +5641,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "DisplayMode.Edit",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "DisplayMode",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
