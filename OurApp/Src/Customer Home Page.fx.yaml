@@ -18,7 +18,7 @@
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =Min(128, Self.Height - 60)
+        TemplateSize: =204
         Width: =Parent.Width
         Y: =TextSearchBox1.Y + TextSearchBox1.Height
         ZIndex: =1
@@ -34,22 +34,8 @@
             OnSelect: =Select(Parent)
             Width: =96
             X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Y: =69
             ZIndex: =1
-
-        Title3 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.ItemName
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image5.Width - 104
-            X: =Image5.X + Image5.Width + 24
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =2
 
         Separator3 As rectangle:
             Height: =1
@@ -62,7 +48,7 @@
             Height: =50
             Icon: =Icon.Add
             OnSelect: |-
-                =If(
+                =/*If(
                     BS1 = true,
                     Collect(
                         collectMultiScan,
@@ -96,15 +82,73 @@
                             SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
                         }
                     )
-                );
+                );*/
+                Collect(
+                        collectMultiScan,
+                        {
+                            Title: ThisItem.ItemName,
+                            ItemDescription: Body1_1,
+                            Price: Body1_2,
+                            Qty: Body1_3,
+                            SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                        }
+                    );
                 Notify("ITEM WAS ADDED TO CART!",Information,5000);
                 
                 Set(varIncrement, varIncrement + 1);
                 Set(qtyNum, Body1_3);
             Width: =61
-            X: =554
-            Y: =32
+            X: =555
+            Y: =104
             ZIndex: =5
+
+        Title12_2 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =ThisItem.ItemName
+                //"title"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =220
+            X: =136
+            Y: =45
+            ZIndex: =6
+
+        Subtitle10_2 As label:
+            Height: =95
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Item Description: " & ThisItem.Description
+                //"description"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =429
+            X: =136
+            Y: =81
+            ZIndex: =7
+
+        Body4_6 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Price: $" & ThisItem.Price
+                //"price"  
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Subtitle10_2.Width
+            X: =136
+            Y: =161
+            ZIndex: =8
 
     Icon11 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
@@ -155,17 +199,6 @@
         X: =534
         Y: =62
         ZIndex: =21
-
-    SearchBox As text:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Default: =""
-        Height: =50
-        HintText: ="Search on Name"
-        Size: =21
-        Width: =266
-        X: =73
-        Y: =30
-        ZIndex: =26
 
     Group2 As group:
         Height: =5
@@ -376,4 +409,14 @@
             X: =101
             Y: =1080
             ZIndex: =28
+
+    SearchBox As text:
+        Default: =""
+        Height: =46
+        HintText: ="Search Item"
+        Size: =18
+        Width: =288
+        X: =80
+        Y: =31
+        ZIndex: =31
 
