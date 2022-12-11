@@ -2924,7 +2924,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon8_4",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3103,7 +3103,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon9_4",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4921,7 +4921,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_13",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5218,7 +5218,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_14",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5523,7 +5523,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label9_15",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6371,6 +6371,22 @@
           "InvariantPropertyName": "Tooltip",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingTop",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingLeft",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -6383,7 +6399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput4_3",
-      "ParentIndex": 21,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6585,6 +6601,16 @@
           "Category": "Design",
           "PropertyName": "Strikethrough",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingTop",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PaddingLeft",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultTextStyle",
@@ -6713,7 +6739,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput5_2",
-      "ParentIndex": 17,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
