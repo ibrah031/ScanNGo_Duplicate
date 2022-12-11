@@ -345,7 +345,10 @@
             ZIndex: =27
 
     TextInput4_1 As text:
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
         Default: =varIncrement
+        Fill: =RGBA(0, 0, 0, 0)
         Height: =30
         RadiusBottomLeft: =65
         RadiusBottomRight: =65
@@ -353,7 +356,7 @@
         RadiusTopRight: =65
         Size: =12
         Width: =45
-        X: =560
+        X: =548
         Y: =1020
         ZIndex: =29
 
