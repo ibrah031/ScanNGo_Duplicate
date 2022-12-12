@@ -58,6 +58,9 @@ ScannedItem As screen:
             Set(qtyNum, Body1_3);
             //Set(DataQty, Data.Quantity);
             //Set(DataQty, (DataQty - qtyNum));
+            Set(SelectedB, false);
+            ClearData(SearchBox.Text);
+            
             
         Size: =24
         Text: ="Add to cart"
@@ -84,7 +87,7 @@ ScannedItem As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =52
         Icon: =Icon.Home
-        OnSelect: =Navigate('Customer Home Page')
+        OnSelect: =Navigate('Customer Home Page') + Reset(SearchBox)
         X: =543
         Y: =16
         ZIndex: =12
@@ -108,7 +111,7 @@ ScannedItem As screen:
         ZIndex: =14
 
     "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Height: =762
+        Height: =739
         Items: |
             =//SearchValue must be a string
             If (
@@ -128,6 +131,12 @@ ScannedItem As screen:
                 Search(
                     Data,
                     SearchValue3,
+                    "ItemName"
+                ),
+                SelectedB = true, 
+                Search(
+                    Data,
+                    Title12_2.Text,
                     "ItemName"
                 )
             )

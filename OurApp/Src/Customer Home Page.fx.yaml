@@ -14,17 +14,18 @@
 
     "BrowseGallery1_2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver4.0'":
         Height: =613
-        Items: =If(!IsBlank(SearchBox), Search(Data,SearchBox.Text,"ItemName"))
+        Items: |
+            =If(!IsBlank(SearchBox), Search(Data,SearchBox.Text,"ItemName"))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =204
+        TemplateSize: =164
         Width: =Parent.Width
         Y: =TextSearchBox1.Y + TextSearchBox1.Height
         ZIndex: =1
 
         Image5 As image:
-            Height: =96
+            Height: =116
             Image: |-
                 =If(ThisItem.ItemName = "Lavender Candle", 'Lavender Candle') & 
                 If(ThisItem.ItemName = "Soy Candle", 'Soy Candle') &
@@ -32,9 +33,9 @@
                 If( ThisItem.ItemName = "Apple Candle", 'Apple Candle') & 
                 If( ThisItem.ItemName = "Beach Scented Candle", 'Beach Scented Candle') 
             OnSelect: =Select(Parent)
-            Width: =96
-            X: =16
-            Y: =69
+            Width: =143
+            X: =25
+            Y: =23
             ZIndex: =1
 
         Separator3 As rectangle:
@@ -47,7 +48,7 @@
         Icon16 As icon.Add:
             Height: =50
             Icon: =Icon.Add
-            OnSelect: |-
+            OnSelect: |+
                 =/*If(
                     BS1 = true,
                     Collect(
@@ -82,7 +83,7 @@
                             SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
                         }
                     )
-                );*/
+                );
                 Collect(
                         collectMultiScan,
                         {
@@ -96,10 +97,14 @@
                 Notify("ITEM WAS ADDED TO CART!",Information,5000);
                 
                 Set(varIncrement, varIncrement + 1);
-                Set(qtyNum, Body1_3);
+                Set(qtyNum, Body1_3);*/
+                Set(SelectedB, true);
+                Notify("Preview Item",Information,5000);
+                Navigate(ScannedItem);
+                
             Width: =61
-            X: =555
-            Y: =104
+            X: =552
+            Y: =56
             ZIndex: =5
 
         Title12_2 As label:
@@ -109,46 +114,15 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =22
             Text: |-
                 =ThisItem.ItemName
                 //"title"
             VerticalAlign: =VerticalAlign.Top
             Width: =220
-            X: =136
-            Y: =45
+            X: =210
+            Y: =63
             ZIndex: =6
-
-        Subtitle10_2 As label:
-            Height: =95
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: |-
-                ="Item Description: " & ThisItem.Description
-                //"description"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =429
-            X: =136
-            Y: =81
-            ZIndex: =7
-
-        Body4_6 As label:
-            Height: =42
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: |-
-                ="Price: $" & ThisItem.Price
-                //"price"  
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Subtitle10_2.Width
-            X: =136
-            Y: =161
-            ZIndex: =8
 
     Icon11 As icon.Search:
         Color: =RGBA(0, 0, 0, 1)
@@ -414,6 +388,7 @@
         Default: =""
         Height: =46
         HintText: ="Search Item"
+        OnSelect: =Set(SelectedB, false);
         Size: =18
         Width: =288
         X: =80
