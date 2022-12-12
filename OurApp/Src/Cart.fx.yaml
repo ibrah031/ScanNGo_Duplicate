@@ -125,6 +125,7 @@ Cart As screen:
             OnSelect: |
                 =Remove(collectMultiScan, ThisItem); 
                 Set(varIncrement, varIncrement - 1);
+            Visible: =deleteB
             X: =550
             Y: =94
             ZIndex: =9
@@ -243,7 +244,7 @@ Cart As screen:
                 ) + Set(
                     updateGNum,
                     guestNum
-                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false);
+                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(deleteB, false) + Set(varIncrement, 0) + Set(footerB, false);
                 
             Size: =18
             Text: ="YES, I AM DONE"
@@ -252,6 +253,18 @@ Cart As screen:
             X: =358
             Y: =615
             ZIndex: =30
+
+    Button10 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =103
+        OnSelect: =Navigate(FirstScreen)
+        Size: =24
+        Text: ="Employee will confirm purchase!"
+        Width: =539
+        X: =57
+        Y: =1006
+        ZIndex: =51
 
     Group6 As group:
         Height: =5
@@ -280,7 +293,7 @@ Cart As screen:
                  
             Size: =24
             Text: ="Scan"
-            Visible: =false
+            Visible: =footerB
             Width: =105
             X: =263
             Y: =1008
@@ -291,6 +304,7 @@ Cart As screen:
             Height: =75
             Icon: =Icon.Camera
             OnSelect: =Reset(BrowseGallery1_1) + Select(BarcodeScanner1_2) 
+            Visible: =footerB
             Width: =98
             X: =266
             Y: =1020
@@ -303,6 +317,7 @@ Cart As screen:
             Height: =128
             Size: =35
             Text: =""
+            Visible: =footerB
             Width: =640
             Y: =1008
             ZIndex: =42
@@ -312,6 +327,7 @@ Cart As screen:
             Icon: =Icon.Person
             Tooltip: |-
                 ="Your guest ID #"
+            Visible: =footerB
             X: =73
             Y: =1031
             ZIndex: =43
@@ -320,6 +336,7 @@ Cart As screen:
             Color: =RGBA(237, 234, 232, 1)
             Icon: =Icon.ShoppingCart
             OnSelect: =Navigate(Cart)
+            Visible: =footerB
             X: =498
             Y: =1026
             ZIndex: =44
@@ -331,6 +348,7 @@ Cart As screen:
             Height: =32
             Size: =20
             Text: ="Guest"
+            Visible: =footerB
             Width: =96
             X: =57
             Y: =1090
@@ -344,6 +362,7 @@ Cart As screen:
             Height: =32
             Size: =25
             Text: ="Scan"
+            Visible: =footerB
             Width: =77
             X: =277
             Y: =1090
@@ -358,6 +377,7 @@ Cart As screen:
             OnSelect: =Navigate(Cart)
             Size: =20
             Text: ="Cart"
+            Visible: =footerB
             Width: =63
             X: =499
             Y: =1090
@@ -368,6 +388,7 @@ Cart As screen:
             Height: =75
             Icon: =Icon.Camera
             OnSelect: =Reset(BrowseGallery1_1) + Select(BarcodeScanner1_2)
+            Visible: =footerB
             Width: =98
             X: =266
             Y: =1020
@@ -388,6 +409,7 @@ Cart As screen:
             Size: =18
             Tooltip: |-
                 ="This is your guest #"
+            Visible: =footerB
             Width: =57
             X: =101
             Y: =1080
@@ -414,6 +436,7 @@ Cart As screen:
             RadiusTopRight: =67
             Size: =10
             Tooltip: ="Number of Items in cart"
+            Visible: =footerB
             Width: =29
             X: =562
             Y: =1019

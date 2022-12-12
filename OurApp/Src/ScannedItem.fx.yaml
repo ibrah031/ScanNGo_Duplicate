@@ -71,6 +71,8 @@ ScannedItem As screen:
             //Set(DataQty, Data.Quantity);
             //Set(DataQty, (DataQty - qtyNum));
             Set(purchaseB, true);
+            Set(deleteB, true);
+            Set(footerB, true);
             
             
             
