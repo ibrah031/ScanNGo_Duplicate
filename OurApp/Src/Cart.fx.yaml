@@ -47,7 +47,7 @@ Cart As screen:
             Text: |-
                 =If(resetC = false,
                     ThisItem.Title, 
-                    ""
+                    ThisItem.Title = " "
                 )
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image9.Width - 104
