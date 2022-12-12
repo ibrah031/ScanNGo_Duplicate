@@ -100,24 +100,25 @@ Cart As screen:
             ZIndex: =7
 
         Body4_2 As label:
-            Height: =39
+            Height: =50
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Text: |
-                =ThisItem.SubTotal
+                ="SubTotal: $" & ThisItem.SubTotal
             VerticalAlign: =VerticalAlign.Top
-            Width: =Subtitle10.Width
+            Width: =426
             X: =159
-            Y: =213
+            Y: =202
             ZIndex: =8
 
         Icon14 As icon.Trash:
             Icon: =Icon.Trash
             OnSelect: |
-                =Remove(collectMultiScan, ThisItem);
+                =Remove(collectMultiScan, ThisItem); 
+                Set(varIncrement, varIncrement - 1);
             X: =550
             Y: =94
             ZIndex: =9
