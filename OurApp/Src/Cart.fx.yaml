@@ -244,7 +244,7 @@ Cart As screen:
                 ) + Set(
                     updateGNum,
                     guestNum
-                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(varIncrement, 0) + Set(footerB, false) + Set(employeeC, true);
+                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(varIncrement, 0) + Set(footerB, false) + Set(employeeB, true);
                 
             Size: =18
             Text: ="YES, I AM DONE"
