@@ -3134,17 +3134,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.resetC"
+                  "fullyQualifiedName": "App.employeeC"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.resetC",
+                  "fullyQualifiedName": "App.employeeC",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "resetC",
+                "member": "employeeC",
                 "module": "App",
                 "type": "App"
               }

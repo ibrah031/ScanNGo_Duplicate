@@ -44,9 +44,7 @@ Cart As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: |
-                =ThisItem.Title
-                   
+            Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image9.Width - 104
             X: =159
@@ -246,7 +244,7 @@ Cart As screen:
                 ) + Set(
                     updateGNum,
                     guestNum
-                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(deleteB, false) + Set(varIncrement, 0) + Set(footerB, false) + Set(employeeB, true) + Set(resetC, false);
+                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(varIncrement, 0) + Set(footerB, false) + Set(employeeC, true);
                 
             Size: =18
             Text: ="YES, I AM DONE"
@@ -260,13 +258,13 @@ Cart As screen:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(209, 232, 178, 1)
         Height: =103
-        OnSelect: =Set(resetC, true)  + Navigate(FirstScreen) + Select(Icon14)
+        OnSelect: =Navigate(FirstScreen)
         Size: =24
         Text: ="Employee will confirm purchase!"
         Visible: =employeeB
         Width: =539
         X: =57
-        Y: =1006
+        Y: =1004
         ZIndex: =51
 
     Group6 As group:
