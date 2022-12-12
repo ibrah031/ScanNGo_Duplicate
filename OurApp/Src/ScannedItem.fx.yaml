@@ -73,6 +73,7 @@ ScannedItem As screen:
             Set(purchaseB, true);
             Set(deleteB, true);
             Set(footerB, true);
+            Set(employeeB, false);
             
             
             

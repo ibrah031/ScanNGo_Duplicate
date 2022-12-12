@@ -244,7 +244,7 @@ Cart As screen:
                 ) + Set(
                     updateGNum,
                     guestNum
-                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(deleteB, false) + Set(varIncrement, 0) + Set(footerB, false);
+                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false) + BarcodeScanner1_2.DisplayMode.View + Icon10_2.DisplayMode.View + Icon9_4.DisplayMode.View + Set(deleteB, false) + Set(varIncrement, 0) + Set(footerB, false) + Set(employeeC, true);
                 
             Size: =18
             Text: ="YES, I AM DONE"
@@ -261,6 +261,7 @@ Cart As screen:
         OnSelect: =Navigate(FirstScreen)
         Size: =24
         Text: ="Employee will confirm purchase!"
+        Visible: =employeeB
         Width: =539
         X: =57
         Y: =1006
@@ -276,7 +277,7 @@ Cart As screen:
         BarcodeScanner1_2 As barcodeScanner:
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(0, 0, 0, 1)
-            Height: =128
+            Height: =105
             OnScan: |-
                 =// check if scanned item was found
                  Set(SearchValue3, BarcodeScanner1_2.Value);
@@ -296,62 +297,64 @@ Cart As screen:
             Visible: =footerB
             Width: =105
             X: =263
-            Y: =1008
+            Y: =1017
             ZIndex: =38
 
         Icon10_2 As icon.Camera:
             Color: =RGBA(237, 234, 232, 1)
-            Height: =75
+            Height: =76
             Icon: =Icon.Camera
             OnSelect: =Reset(BrowseGallery1_1) + Select(BarcodeScanner1_2) 
             Visible: =footerB
             Width: =98
             X: =266
-            Y: =1020
+            Y: =1018
             ZIndex: =39
 
         Label1_13 As label:
             Align: =Align.Center
             Fill: =RGBA(139, 176, 143, 1)
             Font: =Font.Georgia
-            Height: =128
+            Height: =130
             Size: =35
             Text: =""
             Visible: =footerB
             Width: =640
-            Y: =1008
+            Y: =1006
             ZIndex: =42
 
         Icon8_4 As icon.Person:
             Color: =RGBA(237, 234, 232, 1)
+            Height: =65
             Icon: =Icon.Person
             Tooltip: |-
                 ="Your guest ID #"
             Visible: =footerB
             X: =73
-            Y: =1031
+            Y: =1029
             ZIndex: =43
 
         Icon9_4 As icon.ShoppingCart:
             Color: =RGBA(237, 234, 232, 1)
+            Height: =65
             Icon: =Icon.ShoppingCart
             OnSelect: =Navigate(Cart)
             Visible: =footerB
             X: =498
-            Y: =1026
+            Y: =1024
             ZIndex: =44
 
         Label9_13 As label:
             Color: =RGBA(237, 234, 232, 1)
             Font: =Font.'Open Sans Condensed'
             FontWeight: =FontWeight.Semibold
-            Height: =32
+            Height: =33
             Size: =20
             Text: ="Guest"
             Visible: =footerB
             Width: =96
             X: =57
-            Y: =1090
+            Y: =1089
             ZIndex: =45
 
         Label9_14 As label:
@@ -359,13 +362,13 @@ Cart As screen:
             Color: =RGBA(237, 234, 232, 1)
             Font: =Font.'Open Sans Condensed'
             FontWeight: =FontWeight.Semibold
-            Height: =32
+            Height: =33
             Size: =25
             Text: ="Scan"
             Visible: =footerB
             Width: =77
             X: =277
-            Y: =1090
+            Y: =1089
             ZIndex: =46
 
         Label9_15 As label:
@@ -373,25 +376,25 @@ Cart As screen:
             Color: =RGBA(237, 234, 232, 1)
             Font: =Font.'Open Sans Condensed'
             FontWeight: =FontWeight.Semibold
-            Height: =32
+            Height: =33
             OnSelect: =Navigate(Cart)
             Size: =20
             Text: ="Cart"
             Visible: =footerB
             Width: =63
             X: =499
-            Y: =1090
+            Y: =1089
             ZIndex: =47
 
         Icon10_4 As icon.Camera:
             Color: =RGBA(237, 234, 232, 1)
-            Height: =75
+            Height: =76
             Icon: =Icon.Camera
             OnSelect: =Reset(BrowseGallery1_1) + Select(BarcodeScanner1_2)
             Visible: =footerB
             Width: =98
             X: =266
-            Y: =1020
+            Y: =1018
             ZIndex: =48
 
         TextInput5_2 As text:
@@ -405,14 +408,14 @@ Cart As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Font: =Font.'Open Sans Condensed'
             FontWeight: =FontWeight.Semibold
-            Height: =52
+            Height: =53
             Size: =18
             Tooltip: |-
                 ="This is your guest #"
             Visible: =footerB
             Width: =57
             X: =101
-            Y: =1080
+            Y: =1079
             ZIndex: =49
 
         TextInput4_3 As text:
@@ -439,6 +442,6 @@ Cart As screen:
             Visible: =footerB
             Width: =29
             X: =562
-            Y: =1019
+            Y: =1017
             ZIndex: =50
 
