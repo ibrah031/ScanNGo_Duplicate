@@ -182,7 +182,9 @@
         ZIndex: =26
 
         Rectangle1 As rectangle:
-            Fill: =RGBA(214, 223, 238, 1)
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =3
+            Fill: =RGBA(237, 234, 232, 1)
             Height: =220
             Visible: =_exit
             Width: =355
@@ -204,11 +206,12 @@
             ZIndex: =23
 
         Button4 As button:
-            Fill: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(139, 176, 143, 1)
+            Font: =Font.'Open Sans Condensed'
             Height: =35
             OnSelect: =Navigate(FirstScreen) + Set(_exit,false) + Set(scan_mesg, true) + Set(arrow, true)
             Size: =16
-            Text: ="Yes"
+            Text: ="YES"
             Visible: =_exit
             Width: =141
             X: =158
@@ -217,6 +220,7 @@
 
         Button4_1 As button:
             Fill: =RGBA(184, 0, 0, 1)
+            Font: =Font.'Open Sans Condensed'
             Height: =35
             OnSelect: =Set(_exit,false) + Set(scan_mesg,true) + Set(arrow, true) 
             Size: =16
@@ -235,7 +239,7 @@
             =varIncrement
             
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(204, 231, 246, 1)
+        Fill: =RGBA(203, 102, 102, 1)
         FontWeight: =FontWeight.Bold
         Height: =27
         HintText: =""
