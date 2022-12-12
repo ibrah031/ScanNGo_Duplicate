@@ -192,11 +192,11 @@ Cart As screen:
 
         Rectangle2 As rectangle:
             Fill: =RGBA(139, 176, 143, 1)
-            Height: =338
+            Height: =302
             Visible: =_purchase
             Width: =583
             X: =28
-            Y: =369
+            Y: =418
             ZIndex: =26
 
         Label16 As label:
@@ -207,14 +207,11 @@ Cart As screen:
             FontWeight: =FontWeight.Semibold
             Height: =239
             Size: =24
-            Text: |-
-                ="Thank you for shopping with us!
-                
-                Please head towards the cashier to pay for your items"
+            Text: ="Are you sure you are done shopping?"
             Visible: =_purchase
             Width: =549
             X: =42
-            Y: =376
+            Y: =418
             ZIndex: =27
 
         Button6 As button:
@@ -236,9 +233,17 @@ Cart As screen:
             Fill: =RGBA(237, 234, 232, 1)
             Font: =Font.'Open Sans Condensed'
             Height: =60
-            OnSelect: =Button5.DisplayMode.Disabled + Set(_purchase, false) + Set(updateGNum, guestNum);   
+            OnSelect: |+
+                =Button5.DisplayMode.Disabled + Set(
+                    _purchase,
+                    false
+                ) + Set(
+                    updateGNum,
+                    guestNum
+                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we Hope to see you again!" , NotificationType.Success,0);
+                
             Size: =18
-            Text: ="DONE"
+            Text: ="YES, I AM DONE"
             Visible: =_purchase
             Width: =229
             X: =358
