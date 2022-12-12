@@ -191,7 +191,7 @@ Cart As screen:
         ZIndex: =31
 
         Rectangle2 As rectangle:
-            Fill: =RGBA(215, 223, 240, 1)
+            Fill: =RGBA(139, 176, 143, 1)
             Height: =338
             Visible: =_purchase
             Width: =583
@@ -201,6 +201,10 @@ Cart As screen:
 
         Label16 As label:
             Align: =Align.Center
+            Color: =RGBA(237, 234, 232, 1)
+            Fill: =RGBA(139, 176, 143, 1)
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
             Height: =239
             Size: =24
             Text: |-
@@ -214,10 +218,13 @@ Cart As screen:
             ZIndex: =27
 
         Button6 As button:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
             Height: =60
             OnSelect: =Set(_purchase, false)
-            Size: =16
-            Text: ="Continue Shopping"
+            Size: =18
+            Text: ="CONTINUE SHOPPING"
             Visible: =_purchase
             Width: =229
             X: =52
@@ -225,9 +232,12 @@ Cart As screen:
             ZIndex: =28
 
         Button6_1 As button:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(237, 234, 232, 1)
+            Font: =Font.'Open Sans Condensed'
             Height: =60
             OnSelect: =Button5.DisplayMode.Disabled + Set(_purchase, false) + Set(updateGNum, guestNum);   
-            Size: =16
+            Size: =18
             Text: ="DONE"
             Visible: =_purchase
             Width: =229
