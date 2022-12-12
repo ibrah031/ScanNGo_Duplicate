@@ -127,7 +127,7 @@ Cart As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =52
         Icon: =Icon.Home
-        OnSelect: =Navigate('Customer Home Page')
+        OnSelect: =Navigate('Customer Home Page') + Reset(SearchBox) + Set(SelectedB, false)
         X: =543
         Y: =16
         ZIndex: =22
