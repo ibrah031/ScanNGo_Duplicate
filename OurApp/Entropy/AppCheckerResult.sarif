@@ -3134,6 +3134,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.qtyNum"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.qtyNum",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "qtyNum",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._image"
                 }
               ],
@@ -3205,36 +3235,6 @@
               },
               "properties": {
                 "member": "_ATC",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.qtyNum"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.qtyNum",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "qtyNum",
                 "module": "App",
                 "type": "App"
               }

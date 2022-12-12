@@ -65,7 +65,7 @@ ScannedItem As screen:
                 )
             );
             Notify("ITEM WAS ADDED TO CART!",Information,5000);
-            
+            Reset(Slider1_2);
             Set(varIncrement, varIncrement + 1);
             Set(qtyNum, Body1_3);
             //Set(DataQty, Data.Quantity);

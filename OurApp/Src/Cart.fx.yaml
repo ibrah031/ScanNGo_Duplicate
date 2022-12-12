@@ -258,7 +258,7 @@ Cart As screen:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(209, 232, 178, 1)
         Height: =103
-        OnSelect: =Navigate(FirstScreen)
+        OnSelect: =Navigate(FirstScreen) + Reset(SearchBox) + Reset(Slider1_2)
         Size: =24
         Text: ="Employee will confirm purchase!"
         Visible: =employeeB
