@@ -50,6 +50,17 @@ ScannedItem As screen:
                         Qty: Body1_3,
                         SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
                     }
+                ),
+                SelectedB = true, 
+                Collect(
+                    collectMultiScan,
+                    {
+                        Title: Title12_2.Text,
+                        ItemDescription: Body1_1,
+                        Price: Body1_2,
+                        Qty: Body1_3,
+                        SubTotal: (Slider1_2.Value * BrowseGallery1_1.Selected.Price)
+                    }
                 )
             );
             Notify("ITEM WAS ADDED TO CART!",Information,5000);
@@ -59,7 +70,6 @@ ScannedItem As screen:
             //Set(DataQty, Data.Quantity);
             //Set(DataQty, (DataQty - qtyNum));
             Set(SelectedB, false);
-            ClearData(SearchBox.Text);
             
             
         Size: =24
