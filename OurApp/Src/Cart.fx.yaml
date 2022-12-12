@@ -161,6 +161,7 @@ Cart As screen:
         OnSelect: =Set(_purchase, true)
         Size: =25
         Text: ="PURCHASE"
+        Visible: =purchaseB
         Width: =280
         X: =327
         Y: =905
@@ -236,13 +237,13 @@ Cart As screen:
             Font: =Font.'Open Sans Condensed'
             Height: =60
             OnSelect: |+
-                =Button5.DisplayMode.Disabled + Set(
+                =Set(
                     _purchase,
                     false
                 ) + Set(
                     updateGNum,
                     guestNum
-                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(_purchase, false);
+                ) + Notify("Thank you for shopping with us! Please head towards the cashier to pay for your items and we hope to see you again!" , NotificationType.Success,0) + Set(_homeB, false) + Set(_homeB1, false) + Set(purchaseB, false);
                 
             Size: =18
             Text: ="YES, I AM DONE"

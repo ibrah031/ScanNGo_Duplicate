@@ -70,6 +70,7 @@ ScannedItem As screen:
             Set(qtyNum, Body1_3);
             //Set(DataQty, Data.Quantity);
             //Set(DataQty, (DataQty - qtyNum));
+            Set(purchaseB, true);
             
             
             
