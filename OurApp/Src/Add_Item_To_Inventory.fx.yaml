@@ -80,7 +80,9 @@
 
             DataCardKey69 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -137,6 +139,7 @@
                 ZIndex: =4
 
         Description_DataCard10 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Description"
             Default: =ThisItem.Description
@@ -154,7 +157,9 @@
 
             DataCardKey60 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -211,6 +216,7 @@
                 ZIndex: =4
 
         ItemName_DataCard10 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="ItemName"
             Default: =ThisItem.ItemName
@@ -228,7 +234,9 @@
 
             DataCardKey61 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -285,6 +293,7 @@
                 ZIndex: =4
 
         Quantity_DataCard13 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Quantity"
             Default: =ThisItem.Quantity
@@ -302,7 +311,9 @@
 
             DataCardKey63 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -377,7 +388,9 @@
 
             DataCardKey62 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -452,7 +465,9 @@
 
             DataCardKey65 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName

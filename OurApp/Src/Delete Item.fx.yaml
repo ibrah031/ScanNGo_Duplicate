@@ -33,6 +33,8 @@
         ZIndex: =4
 
     Label14 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =21
         Text: |-
@@ -43,10 +45,12 @@
         ZIndex: =5
 
     Button12 As button:
+        Fill: =RGBA(151, 0, 0, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: =Remove(Data, Filter(Data, Quantity ="99")) 
-        Size: =24
-        Text: ="Delete Item"
+        Size: =25
+        Text: ="DELETE ITEM"
         Width: =280
         X: =173
         Y: =1010
@@ -76,6 +80,9 @@
 
             DataCardKey1 As label:
                 AutoHeight: =true
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -88,6 +95,8 @@
             DataCardValue1 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -114,6 +123,9 @@
 
             DataCardKey2 As label:
                 AutoHeight: =true
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -126,6 +138,8 @@
             DataCardValue2 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -152,6 +166,9 @@
 
             DataCardKey5 As label:
                 AutoHeight: =true
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -190,6 +207,9 @@
 
             DataCardKey3 As label:
                 AutoHeight: =true
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -201,6 +221,7 @@
             DataCardValue3 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Open Sans Condensed'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -227,6 +248,9 @@
 
             DataCardKey4 As label:
                 AutoHeight: =true
+                Color: =RGBA(151, 0, 0, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -239,6 +263,8 @@
             DataCardValue4 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -250,8 +276,10 @@
                 ZIndex: =2
 
     Dropdown1 As dropdown:
+        ChevronBackground: =RGBA(151, 0, 0, 1)
         Height: =70
         Items: =Data
+        SelectionFill: =RGBA(0, 0, 0, 1)
         Size: =21
         Width: =575
         X: =32
@@ -259,7 +287,9 @@
         ZIndex: =11
 
     Label17 As label:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(168, 0, 0, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =24
         Text: ="to delete item, first set its Quantity to -99"

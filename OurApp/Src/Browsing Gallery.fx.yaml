@@ -1,6 +1,7 @@
 "'Browsing Gallery' As screen":
 
     "BrowseGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 1)
         Height: =910
         Items: =Data
         Layout: =Layout.Vertical
@@ -19,6 +20,7 @@
             ZIndex: =1
 
         Title5 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -33,6 +35,8 @@
             ZIndex: =2
 
         Subtitle6 As label:
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -49,6 +53,7 @@
 
         NextArrow6 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(0, 0, 0, 1)
             Height: =60
             Icon: =Icon.ChevronRight
             OnSelect: |-
@@ -65,6 +70,7 @@
             ZIndex: =4
 
         Separator6 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -72,6 +78,7 @@
             ZIndex: =5
 
         Subtitle6_1 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -86,10 +93,12 @@
             ZIndex: =6
 
     Button7 As button:
+        Fill: =RGBA(139, 176, 143, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: |-
             =Navigate('Test: Cart Screen',ScreenTransition.Cover)
-        Size: =24
+        Size: =26
         Text: |-
             ="CART
             "

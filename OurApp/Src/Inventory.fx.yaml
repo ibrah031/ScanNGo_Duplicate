@@ -20,6 +20,7 @@
         ZIndex: =1
 
         Title1 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -34,6 +35,7 @@
             ZIndex: =1
 
         Subtitle1 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =71
             OnSelect: =Select(Parent)
             PaddingBottom: =0

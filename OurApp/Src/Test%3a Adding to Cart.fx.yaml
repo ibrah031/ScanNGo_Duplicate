@@ -23,8 +23,11 @@
 
             DataCardKey13 As label:
                 AutoHeight: =true
+                Color: =RGBA(139, 176, 143, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
-                Size: =21
+                Size: =24
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -61,8 +64,11 @@
 
             DataCardKey10 As label:
                 AutoHeight: =true
+                Color: =RGBA(139, 176, 143, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
-                Size: =21
+                Size: =23
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -73,6 +79,7 @@
             DataCardValue10 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Open Sans Condensed'
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -99,8 +106,11 @@
 
             DataCardKey14 As label:
                 AutoHeight: =true
+                Color: =RGBA(139, 176, 143, 1)
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
-                Size: =21
+                Size: =23
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -111,10 +121,12 @@
             DataCardValue14 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.'Open Sans Condensed'
+                FontWeight: =FontWeight.Semibold
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =22
                 Text: ="$" & Text(BrowseGallery.Selected.Price) & ".00"
                 Width: =Parent.Width - 60
                 X: =30
@@ -122,6 +134,8 @@
                 ZIndex: =2
 
     Label3 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =21
         Text: |
@@ -132,15 +146,20 @@
         ZIndex: =2
 
     Slider1 As slider:
+        BorderColor: =RGBA(139, 176, 143, 1)
         Default: =1
         Height: =70
         Max: =20
+        RailFill: =RGBA(0, 0, 0, 1)
+        ValueFill: =RGBA(139, 176, 143, 1)
         Width: =560
         X: =40
         Y: =597
         ZIndex: =3
 
     Label11 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =21
         Text: |-
@@ -151,10 +170,12 @@
         ZIndex: =4
 
     Button3 As button:
+        Fill: =RGBA(139, 176, 143, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: |-
             =Collect(ShoppingCart,{ItemName: BrowseGallery.Selected.ItemName,ItemCost: BrowseGallery.Selected.Price,Quantity: Slider1.Value}); Navigate('Browsing Gallery',ScreenTransition.Cover)
-        Size: =24
+        Size: =25
         Text: ="ADD TO CART"
         Width: =280
         X: =40
@@ -162,6 +183,7 @@
         ZIndex: =5
 
     Icon12 As icon.Add:
+        Color: =RGBA(139, 176, 143, 1)
         Icon: =Icon.Add
         OnSelect: =Label1 + 1
         X: =369
@@ -169,6 +191,8 @@
         ZIndex: =6
 
     Label1 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =35
         Text: =0

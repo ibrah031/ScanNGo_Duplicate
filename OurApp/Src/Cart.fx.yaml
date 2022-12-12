@@ -37,6 +37,7 @@ Cart As screen:
             ZIndex: =1
 
         Title12 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =36
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -51,6 +52,7 @@ Cart As screen:
             ZIndex: =2
 
         Subtitle10 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =95
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -65,6 +67,7 @@ Cart As screen:
             ZIndex: =3
 
         Body4 As label:
+            Font: =Font.'Open Sans Condensed'
             Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -100,6 +103,8 @@ Cart As screen:
             ZIndex: =7
 
         Body4_2 As label:
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
             Height: =50
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -115,6 +120,7 @@ Cart As screen:
             ZIndex: =8
 
         Icon14 As icon.Trash:
+            Color: =RGBA(151, 0, 0, 1)
             Icon: =Icon.Trash
             OnSelect: |
                 =Remove(collectMultiScan, ThisItem); 
@@ -145,20 +151,22 @@ Cart As screen:
         ZIndex: =23
 
     Button5 As button:
-        Color: =RGBA(0, 16, 96, 1)
+        Color: =RGBA(237, 234, 232, 1)
         DisabledFill: =RGBA(244, 244, 244, 0)
-        Fill: =RGBA(215, 223, 240, 1)
+        Fill: =RGBA(139, 176, 143, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: =Set(_purchase, true)
-        Size: =24
-        Text: ="Purchase"
+        Size: =25
+        Text: ="PURCHASE"
         Width: =280
-        X: =16
-        Y: =916
+        X: =327
+        Y: =905
         ZIndex: =24
 
     TotalCost As label:
-        FontWeight: =FontWeight.Bold
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =72
         Size: =21
         Text: |-
@@ -374,7 +382,7 @@ Cart As screen:
             Default: |
                 =varIncrement
             DisplayMode: =DisplayMode.View
-            Fill: =RGBA(204, 231, 246, 1)
+            Fill: =RGBA(203, 102, 102, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
             HintText: =""

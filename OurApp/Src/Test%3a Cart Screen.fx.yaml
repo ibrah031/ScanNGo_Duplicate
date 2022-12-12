@@ -32,6 +32,8 @@
             ZIndex: =2
 
         Subtitle7 As label:
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
             Height: =36
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -53,6 +55,8 @@
             ZIndex: =5
 
         Subtitle7_1 As label:
+            Font: =Font.'Open Sans Condensed'
+            FontWeight: =FontWeight.Semibold
             Height: =36
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -68,6 +72,8 @@
             ZIndex: =6
 
     Label15 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =62
         Size: =21
         Text: |-
@@ -79,6 +85,7 @@
         ZIndex: =2
 
     TextInput2 As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
         Default: ="Text input"
         Height: =62
         Size: =21
@@ -88,6 +95,8 @@
         ZIndex: =3
 
     Label15_1 As label:
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =44
         Size: =21
         Text: |-
@@ -98,6 +107,8 @@
         ZIndex: =4
 
     Button8 As button:
+        Fill: =RGBA(139, 176, 143, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         Size: =24
         Text: |-
@@ -109,6 +120,8 @@
         ZIndex: =5
 
     Button9 As button:
+        Fill: =RGBA(118, 0, 0, 1)
+        Font: =Font.'Open Sans Condensed'
         Height: =70
         OnSelect: =Clear(ShoppingCart)
         Size: =20
