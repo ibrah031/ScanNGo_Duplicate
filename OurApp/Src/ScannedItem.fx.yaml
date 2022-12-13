@@ -74,6 +74,7 @@ ScannedItem As screen:
             Set(deleteB, true);
             Set(footerB, true);
             Set(employeeB, false);
+            Reset(SearchBox);
             
             
             
@@ -90,7 +91,7 @@ ScannedItem As screen:
         Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.'Open Sans Condensed'
         Height: =45
-        OnSelect: =Reset(BrowseGallery1_1) + Title1_1.Text = " " + Navigate('Customer Home Page') + Reset(SearchBox)
+        OnSelect: =Reset(BrowseGallery1_1) + Title1_1.Text = " " + Navigate('Customer Home Page')
         Size: =24
         Text: ="CANCEL"
         Visible: =true //_cancelB
