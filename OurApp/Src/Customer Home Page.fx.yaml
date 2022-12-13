@@ -98,7 +98,6 @@
                 
                 Set(varIncrement, varIncrement + 1);
                 Set(qtyNum, Body1_3);*/
-                Reset(BrowseGallery1_1);
                 Set(SelectedB, true);
                 Notify("Preview Item",Information,5000);
                 Navigate(ScannedItem);
