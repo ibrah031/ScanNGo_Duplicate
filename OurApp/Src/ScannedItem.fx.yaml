@@ -370,7 +370,7 @@ ScannedItem As screen:
         Icon9_3 As icon.ShoppingCart:
             Color: =RGBA(237, 234, 232, 1)
             Icon: =Icon.ShoppingCart
-            OnSelect: =Navigate(Cart) + Set(_homeB, true) + Set(_homeB1, true)
+            OnSelect: =Navigate(Cart) + Reset(BrowseGallery1_1) + Set(_homeB, true) + Set(_homeB1, true)
             X: =498
             Y: =1026
             ZIndex: =29
