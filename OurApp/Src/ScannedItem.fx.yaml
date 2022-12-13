@@ -90,7 +90,7 @@ ScannedItem As screen:
         Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.'Open Sans Condensed'
         Height: =45
-        OnSelect: =Navigate('Customer Home Page') + Reset(SearchBox)// + Reset(BrowseGallery1_1)
+        OnSelect: =Reset(BrowseGallery1_1) + Title1_1.Text = " " + Navigate('Customer Home Page') + Reset(SearchBox)
         Size: =24
         Text: ="CANCEL"
         Visible: =true //_cancelB
@@ -370,7 +370,7 @@ ScannedItem As screen:
         Icon9_3 As icon.ShoppingCart:
             Color: =RGBA(237, 234, 232, 1)
             Icon: =Icon.ShoppingCart
-            OnSelect: =Navigate(Cart) + Reset(BrowseGallery1_1) + Set(_homeB, true) + Set(_homeB1, true)
+            OnSelect: =Navigate(Cart) + Reset(BrowseGallery1_1) + Title1_1.Text = " " + Set(_homeB, true) + Set(_homeB1, true)
             X: =498
             Y: =1026
             ZIndex: =29
