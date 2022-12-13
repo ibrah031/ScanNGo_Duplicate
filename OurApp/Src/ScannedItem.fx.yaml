@@ -90,7 +90,7 @@ ScannedItem As screen:
         Fill: =RGBA(139, 176, 143, 1)
         Font: =Font.'Open Sans Condensed'
         Height: =45
-        OnSelect: =Navigate('Customer Home Page') + Reset(SearchBox)
+        OnSelect: =Navigate('Customer Home Page') + Reset(SearchBox) + Reset(BrowseGallery1_1)
         Size: =24
         Text: ="CANCEL"
         Visible: =true //_cancelB
